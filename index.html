@@ -8,8 +8,146 @@
   <title>repair-design-project from Rolling Scope school</title>
 </head>
 <body>
+  <h1 class="visually-hidden"></h1>
   <header class="main-header">
-    1111111111111
+    <nav class="main-nav main-header__nav">
+      <p class="main-logo">IC "Repair Design Project"</p>
+      <ul class="main-nav__list">
+        <li class="site-nav__item"><span class="site-nav__link site-nav__current">Home</span></li>
+        <li class="site-nav__item"><a href="#" class="site-nav__link">Projects</a></li>
+        <li class="site-nav__item"><a href="#" class="site-nav__link">Measurement</a></li>
+        <li class="site-nav__item"><a href="#" class="site-nav__link">Team</a></li>
+        <li class="site-nav__item"><a href="#" class="site-nav__link">Reviews</a></li>
+        <li class="site-nav__item"><a href="#" class="site-nav__link">Contacts</a></li>
+      </ul>
+      <div class="main-nav__call">
+        <a href="tel:+79287683239" class="main-nav__call-number">+7 (928) 768-32-39</a>
+        <a class="main-nav__call-btn btn btn--yellow" href="#">Request a call</a>
+      </div>
+    </nav>
   </header>
+  <main class="main-page">
+    <section class="main-offer">
+      <h2 class="visually-hidden">Actual main offer</h2>
+      <div class="main-offer__instagram">
+        <a class="main-offer__instagram-text" href="#">Instagram</a>
+        <div class="main-offer__instagram-line"></div>
+      </div>
+      <div class="main-offer__wrap">
+        <h3 class="main-offer__title">Turnkey Repair in the city of Rostov-on-Don</h3>
+        <p class="main-offer__text">Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work</p>
+        <a href="#" class="btn--yellow main-offer__btn">Calculate the cost</a>
+        <a href="#" class="btn--ghost main-offer__btn">Submit our application</a>
+      </div>
+      <div class="main-offer__scroll">
+        <button class="main-offer__scroll-text" type="button">Scroll down</button>
+        <div class="main-offer__btn"></div>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="projects__desc">
+        <div class="projects__title">
+          <h2 class="projects__title--text">Completed projects</h2>
+          <div class="line"></div>
+        </div>
+        <p class="projects__decs--textt">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+        <ul class="projects__desc--list">
+          <li class="projects__desc--item">
+            <p class="projects__desc--definition-title">City</p>
+            <p class="projects__desc--definition-text">Rostov-on-Don LCD admiral</p>
+          </li>
+          <li class="projects__desc--item">
+            <p class="projects__desc--definition-title">Apartment area:</p>
+            <p class="projects__desc--definition-text">81 m2</p>
+          </li>
+          <li class="projects__desc--item">
+            <p class="projects__desc--definition-title">Repair time:</p>
+            <p class="projects__desc--definition-text">3.5 months</p>
+          </li>
+          <li class="projects__desc--item">
+            <p class="projects__desc--definition-title">Repair Cost:</p>
+            <p class="projects__desc--definition-text">Upon request</p>
+          </li>
+        </ul>
+        <div class="toggles">
+          <button type="button" class="toggle__prev"><span class="visually-hidden">Предыдущий слайд</span></button>
+          <button type="button" class="toggle"><span class="visually-hidden">Первый слайд</span></button>
+          <button type="button" class="toggle"><span class="visually-hidden">Второй слайд</span></button>
+          <button type="button" class="toggle"><span class="visually-hidden">Третий слайд</span></button>
+          <button type="button" class="toggle__next"><span class="visually-hidden">Следующий слайд</span></button>
+      </div>
+      <div class="slider">
+        <nav class="slider__nav">
+          <ul class="slider__nav--list">
+            <li class="slider__nav--item">
+              <a class="slider__nav--link" href="#">Rostov-on-Don, Admiral</a>
+            </li>
+            <li class="slider__nav--item">
+              <a class="slider__nav--link" href="#">Sochi Thieves</a>
+            </li>
+            <li class="slider__nav--item">
+              <a class="slider__nav--link" href="#">Rostov-on-Don Patriotic</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="slider__img--list">
+        <button class="slider__btn--next btn--yellow-round" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>
+          <img  class="slider__img--item"
+                src="http://placehold.it/679x483"
+                alt="Rostov-on-Don, Admiral hall"
+                width="679" height="483">
+          <img  class="slider__img--item"
+                src="http://placehold.it/679x483"
+                alt="Sochi Thieves"
+                width="679" height="483">
+          <img  class="slider__img--item"
+                src="http://placehold.it/679x483"
+                alt="Rostov-on-Don Patriotic"
+                width="679" height="483">
+        <button class="slider__btn--next btn--yellow-round" type="button"><span class="visually-hidden">Следующий слайд</span></button>
+        </div>
+      </div>
+    </section>
+    <section class="online-control">
+      <h2 class="online-control__title">Online control</h2>
+      <div class="video__wrap">
+        <video  class="video online-control__video"
+                poster="http://placehold.it/817x434"
+                width="817" height="434">
+          <source src="https://media.w3.org/2010/05/sintel/trailer.mp4"
+                  type="video/mp4">
+                  Сожалею; ваш браузер не поддерживает HTML5 видео в MP4 с H.264.
+        </video>
+        <div  id="video-controls"
+              class="controls"
+              data-state="closed">
+          <button   class="controls__play"
+                    id="playpause"
+                    type="button"
+                    data-state="visible">
+            <span class="visually-hidden">Play or pause on player</span>
+          </button>
+        </div>
+      </div>
+      <p class="online-control__text">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</p>
+      <form   action="#"
+              class="form online-control__form"
+              method="post">
+        <div class="field-layout">
+            <label class="field-label" for="name">Name:</label>
+            <input class="field-input" type="text" id="name" name="name" placeholder="What is your name:">
+        </div>
+        <div class="field-layout">
+            <label class="field-label" for="phone">Phone:</label>
+            <input class="field-input" type="tel" id="phone" name="phone" placeholder="Your phone number:">
+        </div>
+        <button class="btn btn--yellow" type="submit">Submit</button>
+        <div class="field-layout">
+            <input class="agree-checkbox" type="checkbox" name="agreement" id="agreemen">
+            <label class="agree-label" for="agreement" tabindex="0" checked>I agree to the processing of personal data</label>
+          </div>
+      </form>
+    </section>
+  </main>
 </body>
 </html>
