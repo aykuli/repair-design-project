@@ -1,0 +1,13 @@
+.editorconfig
+.gitattributes
+.stylelintrc
+
+node_modules/
+
+Thumbs.db
+
+*.code-workspace
+
+task.md
+build/
+
