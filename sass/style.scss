@@ -1,3 +1,7 @@
-body {
-  background-color: rgb(136, 248, 252);
-}
+@import './variables.scss';
+@import './mixin.scss';
+@import './outlines.scss';
+@import './scaffolding.scss';
+
+@import './blocks/main-nav.scss';
+@import './blocks/page-header.scss';
