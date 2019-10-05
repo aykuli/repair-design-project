@@ -3,6 +3,8 @@
 .stylelintrc
 
 node_modules/
+build/
+sass/
 
 Thumbs.db
 

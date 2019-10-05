@@ -5,21 +5,7 @@ From Rolling Scopes School 2019Q3
 
 ## Prepare and test
 1. Open folder with the project in [Visual Studio Code](https://code.visualstudio.com/download)
-2. Install `Live Sass Compiler` plugin in `Visual Studio Code`.
-3. Open paremeters of Visual Studio Code (`Ctrl + <`)
-4. Enter `edit setting.json`.
-5. In `setting.json` file configure `Live Sass Compiler`
-6. Add
-
-
-    "liveSassCompile.settings.formats": [{
-                "format": "expanded",
-        "extensionName": ".css",
-        "savePath": "/css/" //write here your destination folder for css file
-        }],
-    }
-
-
-7. Press `F1` or `ctrl+shift+P` and type `Live Sass: Watch Sass` to start live compilation or, type `Live Sass: Stop Watching Sass` to stop a live compilation.
-8. Press `F1` or `ctrl+shift+P` and type `Live Sass: Compile Sass - Without Watch Mode` to compile Sass or Scss for one time.
+2. To install all dependencies use [`npm install`](https://docs.npmjs.com/cli/install)
+3. To run developing environment and make buildede files type in terminal `gulp`
+4. There will appear folder `build`, where will be files `index.html` and folders `css` and `assets` with accordingly files `style.css` and folder `img`, `fonts`.
 
