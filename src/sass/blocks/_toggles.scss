@@ -1,0 +1,73 @@
+.toggle {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  margin-right: 18px;
+  padding: 0;
+
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+
+  &__arrow {
+    position: relative;
+
+    width: 40px;
+    height: 1px;
+    margin-top: 4px;
+
+    background-color: #fff;
+    border: none;
+
+    &::before,
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 10px;
+      height: 2px;
+
+      background-color: #fff;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &--prev {
+      margin-right: 30px;
+
+      &::before {
+        top: 3px;
+        left: -2px;
+      }
+
+      &::after {
+        top: -3px;
+        left: -2px;
+      }
+    }
+
+    &--next {
+      margin-left: 12px;
+
+      &::before {
+        top: -3px;
+        right: -2px;
+      }
+
+      &::after {
+        top: 3px;
+        right: -2px;
+      }
+    }
+  }
+}
+

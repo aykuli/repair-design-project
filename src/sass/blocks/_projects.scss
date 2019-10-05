@@ -1,10 +1,41 @@
 .projects {
-  display: flex;
-  flex-direction: column;
+  padding: 35px 18px;
+
+  color: #fff;
+
+  background-color: #252525;
+
+  &__header {
+    margin-bottom: 36px;
+  }
+
+  &__title {
+    max-width: 200px;
+    margin: 0 auto 22px;
+
+    color: $color-main;
+  }
+
+  &__text {
+    min-height: 86px;
+    line-height: 22px;
+  }
+
+  &__slider {
+    margin-bottom: 35px;
+  }
 
   &__desc {
     &--list {
       @include reset-list;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 25px;
+      max-width: 340px;
+      margin: 0 auto;
+
+      text-align: left;
     }
 
     &--item {
@@ -12,14 +43,25 @@
       padding: 0;
 
       &-title {
+        min-width: 150px;
+        margin-bottom: 10px;
+
         font-family: 'YesevaOne', 'Arial', sans-serif;
         font-style: normal;
         font-weight: normal;
-        font-size: 27px;
-        line-height: 37px;
-        letter-spacing: -0.07em;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
         text-transform: uppercase;
         color: $color-main;
+      }
+
+      &-text {
+        margin-right: 50px;
+
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
       }
     }
   }
@@ -29,31 +71,91 @@
   }
 }
 
-@media(min-width: 1440px) {
+@media(min-width: 1000px) {
   .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "header slider"
+    "desc slider"
+    "toggles slider";
+
+    padding-top: 107px;
+    padding-left: 100px;
+
+    background-color: $color-black;
+
     &__header {
-      order: 0;
+      grid-area: header;
+
+      padding-top: 70px;
+    }
+
+    &__title {
+      position: relative;
+
+      margin: 0 0 34px;
+
+      font-size: 27px;
+      line-height: 37px;
+      letter-spacing: -0.07em;
+      text-align: left;
+
+      &::after {
+        content: '';
+
+        position: absolute;
+        bottom: 15px;
+        right: -25px;
+
+        width: 92px;
+        height: 2px;
+
+        background-color: $color-main;
+      }
+    }
+
+    &__text {
+      max-width: 454px;
+
+      font-size: 18px;
+      line-height: 29px;
+      text-align: left;
     }
 
     &__desc {
       &--list {
         @include reset-list;
-        order: 1;
+
+        grid-area: desc;
+        row-gap: 34px;
+        max-width: 455px;
+
+        margin-bottom: 90px;
       }
 
       &--item {
-        margin: 0;
-        padding: 0;
+        &-title {
+          font-size: 18px;
+          line-height: 25px;
+        }
+
+        &-text {
+          font-size: 15px;
+          line-height: 20px;
+        }
       }
     }
 
-
     &__toggles {
+      grid-area: toggles;
+
       display: flex;
     }
 
     &__slider {
-      order: 2;
+      max-width: 840px;
+      grid-area: slider;
     }
   }
 }

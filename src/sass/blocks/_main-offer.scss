@@ -2,6 +2,7 @@
   &__wrap {
     padding: 85px 18px 60px 18px;
 
+    background-color: $color-black;
     background-image: url(http://placehold.it/375x476);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -18,6 +19,7 @@
 
     font-size: 23px;
     line-height: 31px;
+    text-align: left;
     color: #fff;
   }
 
@@ -28,6 +30,7 @@
     font-family: 'FuturaBookC', 'Arial', sans-serif;
     font-size: 18px;
     line-height: 24px;
+    text-align: left;
     color: #fff;
     }
 
@@ -56,6 +59,7 @@
 
     display: flex;
     padding-top: 0;
+    margin-bottom: 48px;
 
     background-image: url(http://placehold.it/1358x707);
 
@@ -64,7 +68,7 @@
       flex-direction: column;
       justify-content: space-around;
 
-      background-color: #000;
+      background-color: $color-black;
 
       &--text {
         position: relative;
@@ -113,7 +117,7 @@
 
     &__scroll {
       position: absolute;
-      bottom: 0;
+      bottom: -48px;
       left: 0;
 
       display: block;
@@ -131,7 +135,7 @@
         text-transform: uppercase;
         color: #fff;
 
-        background-color: #000;
+        background-color: $color-black;
         border: none;
       }
 

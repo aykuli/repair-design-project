@@ -9,7 +9,7 @@ body {
   font-weight: 400;
   color: #000;
 
-  background-color: #222;
+  background-color: $color-black;
 }
 
 a {
@@ -39,7 +39,21 @@ h2 {
   padding: 0;
 
   font-family: 'YesevaOne', 'Arial', 'sans-serif';
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: -0.07em;
+  text-align: center;
   text-transform: uppercase;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'FuturaBookC', 'Arial', 'sans-serif';
+  text-align: center;
 }
 
 
