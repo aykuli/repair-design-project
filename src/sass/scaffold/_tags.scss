@@ -1,0 +1,45 @@
+body {
+  min-width: $width-mobile;
+
+  @include reset-list;
+
+  font-family: 'FuturaDemiC Regular', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000;
+
+  background-color: #222;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'FuturaDemiC Regular', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'YesevaOne', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+}
+
+

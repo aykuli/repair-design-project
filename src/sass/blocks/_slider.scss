@@ -1,0 +1,57 @@
+.slider {
+  &__nav {
+    &--list {
+      display: none;
+    }
+  }
+
+  &__img {
+    &--list {
+      position: relative;
+
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: hidden;
+    }
+  }
+
+  &__btn {
+    &--next,
+    &--prev {
+      position: absolute;
+      top: 103px;
+
+      width: 36px;
+      height: 36px;
+
+      background-color: $color-main;
+      border: none;
+      border-radius: 50%;
+    }
+
+    &--prev {
+      left: 14px;
+    }
+
+    &--next {
+      right: 13px;
+    }
+  }
+}
+
+@media(min-width: 1440px) {
+  .slider {
+    &__nav {
+      &--list {
+        @include reset-list;
+
+        display: flex;
+      }
+
+      &--item {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}

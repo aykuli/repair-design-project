@@ -1,0 +1,177 @@
+.main-offer {
+  &__wrap {
+    padding: 85px 18px 60px 18px;
+
+    background-image: url(http://placehold.it/375x476);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+  }
+
+  &__instagram {
+    display: none;
+  }
+
+  &__title {
+    max-width: 550px;
+    margin-bottom: 16px;
+
+    font-size: 23px;
+    line-height: 31px;
+    color: #fff;
+  }
+
+  &__text {
+    max-width: 450px;
+    margin-bottom: 32px;
+
+    font-family: 'FuturaBookC', 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    }
+
+  &__scroll {
+    display: none;
+  }
+
+  &__btn {
+    display: block;
+    padding: 19px 70px;
+    margin-bottom: 26px;
+
+    text-align: center;
+    box-shadow: none;
+
+    &--wrap {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media(min-width: 1200px) {
+  .main-offer {
+    position: relative;
+
+    display: flex;
+    padding-top: 0;
+
+    background-image: url(http://placehold.it/1358x707);
+
+    &__instagram {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      background-color: #000;
+
+      &--text {
+        position: relative;
+
+        color: $color-main;
+        transform: rotate(90deg);
+
+        &::after {
+          content: '';
+
+          position: absolute;
+          top: 7px;
+          left: 70px;
+
+          width: 51px;
+          height: 2px;
+
+          background-color: $color-main;
+        }
+      }
+    }
+
+    &__wrap {
+      padding: 194px 0 190px 60px;
+    }
+    &__title {
+      font-size: 40px;
+      line-height: 53px;
+    }
+
+    &__text {
+      margin-bottom: 40px;
+
+      font-size: 22px;
+      line-height: 30px;
+    }
+
+    &__btn {
+      display: inline-block;
+      margin-right: 20px;
+
+      &--wrap {
+        flex-direction: row;
+      }
+    }
+
+    &__scroll {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      display: block;
+
+      &--text {
+        display: flex;
+        align-items: center;
+        padding: 40px 48px;
+
+        font-family: 'YesevaOne', 'Arial', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #fff;
+
+        background-color: #000;
+        border: none;
+      }
+
+      &--icon {
+        position: relative;
+
+        width: 29px;
+        height: 29px;
+        margin-left: 12px;
+
+        background-color: transparent;
+        border: 2px solid $color-main;
+        border-radius: 50%;
+
+        &::before,
+        &::after {
+          content: '';
+
+          position: absolute;
+          top: 14px;
+          left: 8px;
+
+          width: 8px;
+          height: 2px;
+
+          background-color: $color-main;
+        }
+
+        &::before {
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          left: 12px;
+
+          transform: rotate(-45deg);
+        }
+      }
+
+    }
+  }
+}
+

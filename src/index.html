@@ -29,16 +29,20 @@
     <main class="main-page">
       <section class="main-offer">
         <div class="main-offer__instagram">
-          <a class="main-offer__instagram-text" href="https://www.instagram.com/rollingscopes/">Instagram</a>
+          <a class="main-offer__instagram--text" href="https://www.instagram.com/rollingscopes/">Instagram</a>
         </div>
         <div class="main-offer__wrap">
           <h2 class="main-offer__title">Turnkey Repair in the city of <span class="text-yellow">Rostov-on-Don</span></h2>
           <p class="main-offer__text">Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work</p>
-          <a href="#" class="btn--yellow main-offer__btn">Calculate the cost</a>
-          <a href="#" class="btn--ghost main-offer__btn">Submit our application</a>
+          <div class="main-offer__btn--wrap"></div>
+            <a href="#" class="btn--yellow main-offer__btn">Calculate the cost</a>
+            <a href="#" class="btn--ghost main-offer__btn">Submit our application</a>
         </div>
         <div class="main-offer__scroll">
-          <button class="main-offer__scroll--text" type="button">Scroll down</button>
+          <button class="main-offer__scroll--text" type="button">
+            Scroll down
+            <div class="main-offer__scroll--icon"></div>
+          </button>
         </div>
       </section>
       <section class="projects">
@@ -70,30 +74,29 @@
           </div>
         </div>
         <ul class="projects__desc--list">
-            <li class="projects__desc--item">
-              <p class="projects__desc--item-title">City</p>
-              <p class="projects__desc--item-text">Rostov-on-Don LCD admiral</p>
-            </li>
-            <li class="projects__desc--item">
-              <p class="projects__desc--item-title">Apartment area:</p>
-              <p class="projects__desc--item-text">81 m2</p>
-            </li>
-            <li class="projects__desc--item">
-              <p class="projects__desc--item-title">Repair time:</p>
-              <p class="projects__desc--item-text">3.5 months</p>
-            </li>
-            <li class="projects__desc--item">
-              <p class="projects__desc--item-title">Repair Cost:</p>
-              <p class="projects__desc--item-text">Upon request</p>
-            </li>
-          </ul>
-          <div class="toggles projects__toggles">
-            <button type="button" class="toggle__prev"><span class="visually-hidden">Предыдущий слайд</span></button>
-            <button type="button" class="toggle"><span class="visually-hidden">Первый слайд</span></button>
-            <button type="button" class="toggle"><span class="visually-hidden">Второй слайд</span></button>
-            <button type="button" class="toggle"><span class="visually-hidden">Третий слайд</span></button>
-            <button type="button" class="toggle__next"><span class="visually-hidden">Следующий слайд</span></button>
-          </div>
+          <li class="projects__desc--item">
+            <p class="projects__desc--item-title">City</p>
+            <p class="projects__desc--item-text">Rostov-on-Don LCD admiral</p>
+          </li>
+          <li class="projects__desc--item">
+            <p class="projects__desc--item-title">Apartment area:</p>
+            <p class="projects__desc--item-text">81 m2</p>
+          </li>
+          <li class="projects__desc--item">
+            <p class="projects__desc--item-title">Repair time:</p>
+            <p class="projects__desc--item-text">3.5 months</p>
+          </li>
+          <li class="projects__desc--item">
+            <p class="projects__desc--item-title">Repair Cost:</p>
+            <p class="projects__desc--item-text">Upon request</p>
+          </li>
+        </ul>
+        <div class="toggles projects__toggles">
+          <button type="button" class="toggle__prev"><span class="visually-hidden">Предыдущий слайд</span></button>
+          <button type="button" class="toggle"><span class="visually-hidden">Первый слайд</span></button>
+          <button type="button" class="toggle"><span class="visually-hidden">Второй слайд</span></button>
+          <button type="button" class="toggle"><span class="visually-hidden">Третий слайд</span></button>
+          <button type="button" class="toggle__next"><span class="visually-hidden">Следующий слайд</span></button>
         </div>
       </section>
       <section class="online-control">
@@ -545,9 +548,9 @@
       </section>
     </main>
     <footer class="main-footer">
-        <nav class="main-nav main-footer">
-          <p class="main-logo">IC "Repair Design Project"</p>
-          <ul class="main-nav__list">
+        <nav class="site-nav main-footer__nav">
+          <p class="site-nav__logo">IC "Repair Design Project"</p>
+          <ul class="site-nav__list">
             <li class="site-nav__item"><span class="site-nav__link site-nav__current">Home</span></li>
             <li class="site-nav__item"><a href="#" class="site-nav__link">Projects</a></li>
             <li class="site-nav__item"><a href="#" class="site-nav__link">Measurement</a></li>
@@ -555,9 +558,9 @@
             <li class="site-nav__item"><a href="#" class="site-nav__link">Reviews</a></li>
             <li class="site-nav__item"><a href="#" class="site-nav__link">Contacts</a></li>
           </ul>
-          <div class="main-nav__call">
-            <a href="tel:+79287683239" class="main-nav__call-number">+7 (928) 768-32-39</a>
-            <a class="main-nav__call-btn btn btn--yellow" href="#">Request a call</a>
+          <div class="site-nav__call">
+            <a href="tel:+79287683239" class="site-nav__call-number">+7 (928) 768-32-39</a>
+            <a class="site-nav__call-btn btn btn--yellow" href="#">Request a call</a>
           </div>
         </nav>
     </footer>

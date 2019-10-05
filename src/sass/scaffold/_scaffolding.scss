@@ -1,0 +1,47 @@
+.page__wrap {
+  margin: 0 auto;
+  min-width: $width-mobile;
+  max-width: $width-desktop;
+
+  background-color: #fff;
+
+  overflow: hidden;
+}
+
+.visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+
+	border: 0;
+	white-space: nowrap;
+
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.btn {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: normal;
+
+  border: none;
+  border-radius: 2px;
+
+  &--yellow {
+    background: $color-main;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  }
+
+  &--ghost {
+    border: 1px solid #fff;
+    box-sizing: border-box;
+  }
+}
+
+.text-yellow {
+  color: $color-main;
+}

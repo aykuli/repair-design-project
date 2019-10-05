@@ -1,0 +1,59 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+
+  &__desc {
+    &--list {
+      @include reset-list;
+    }
+
+    &--item {
+      margin: 0;
+      padding: 0;
+
+      &-title {
+        font-family: 'YesevaOne', 'Arial', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 27px;
+        line-height: 37px;
+        letter-spacing: -0.07em;
+        text-transform: uppercase;
+        color: $color-main;
+      }
+    }
+  }
+
+  &__toggles {
+    display: none;
+  }
+}
+
+@media(min-width: 1440px) {
+  .projects {
+    &__header {
+      order: 0;
+    }
+
+    &__desc {
+      &--list {
+        @include reset-list;
+        order: 1;
+      }
+
+      &--item {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+
+    &__toggles {
+      display: flex;
+    }
+
+    &__slider {
+      order: 2;
+    }
+  }
+}
