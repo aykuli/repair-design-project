@@ -111,46 +111,43 @@
 
       <section class="online-control">
         <h2 class="online-control__title">Online control</h2>
-        <img  src="http://placehold.it/33x28"
+        <img  src="http://placehold.it/114x28"
               class="online-control__icon"
               alt="control icon"
-              width="33" height="28">
-        <div class="video__wrap">
-          <video  class="video online-control__video"
-                  poster="http://placehold.it/817x434"
-                  width="817" height="434">
-            <source src="https://media.w3.org/2010/05/sintel/trailer.mp4"
-                    type="video/mp4">
-                    Сожалею; ваш браузер не поддерживает HTML5 видео в MP4 с H.264.
+              width="114" height="28">
+        <div class="online-control__video--wrap">
+          <video  class="online-control__video"
+                  poster="http://placehold.it/340x207">
+                  <source src="https://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+                  Сожалею; ваш браузер не поддерживает HTML5 видео в MP4 с H.264.
           </video>
-          <div  id="video-controls"
-                class="controls"
-                data-state="closed">
-            <button   class="controls__play"
-                      id="playpause"
-                      type="button"
-                      data-state="visible">
-              <span class="visually-hidden">Play or pause on player</span>
-            </button>
-          </div>
+          <button   class="online-control__video--play-btn"
+                    id="playpause"
+                    type="button"
+                    data-state="visible">
+            <span class="visually-hidden">Play or pause on player</span>
+            <svg width="10" height="11" viewBox="0 0 10 11" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.37646 5.71765L0.235288 10.9953L0.235289 0.439992L9.37646 5.71765Z" fill="#fff"/>
+            </svg>
+          </button>
         </div>
         <p class="online-control__text">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</p>
         <form   action="#"
                 class="form online-control__form"
                 method="post">
-          <div class="field-layout">
-            <label class="field-label" for="name">Name:</label>
-            <input class="field-input" type="text" id="name" name="name" placeholder="What is your name:">
+          <div class="form__layout">
+            <label class="form__label--text" for="name">Name:</label>
+            <input class="form__input--text" type="text" id="name" name="name" placeholder="What is your name:">
           </div>
-          <div class="field-layout">
-            <label class="field-label" for="phone">Phone:</label>
-            <input class="field-input" type="tel" id="phone" name="phone" placeholder="Your phone number:">
+          <div class="form__layout">
+            <label class="form__label--text" for="phone">Phone:</label>
+            <input class="form__input--text" type="tel" id="phone" name="phone" placeholder="Your phone number:">
           </div>
-          <button class="btn btn--yellow" type="submit">Submit</button>
-          <div class="field-layout">
-            <input class="agree-checkbox" type="checkbox" name="agreement" id="agreemen">
-            <label class="agree-label" for="agreement" tabindex="0" checked>I agree to the processing of personal data</label>
+          <div class="form__layout">
+            <input class="form__input--checkbox" type="checkbox" name="agreement" id="agreement" checked>
+            <label class="form__label--checkbox" for="agreement" tabindex="0">I agree to the processing of personal data</label>
           </div>
+          <button class="btn btn--yellow form__btn" type="submit">Submit</button>
         </form>
       </section>
 

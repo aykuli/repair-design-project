@@ -1,0 +1,103 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  margin: 0 auto;
+
+  font-family: 'FuturaBookC', 'Arial', sans-serif;
+  color: #fff;
+  text-align: left;
+
+  &__layout {
+    margin-bottom: 60px;
+
+    &:nth-child(2) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__label {
+    &--text {
+      display: block;
+
+      font-size: 15px;
+      line-height: 27px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    &--checkbox {
+      position: relative;
+
+      padding-left: 25px;
+      font-size: 16px;
+      line-height: 22px;
+
+      cursor: pointer;
+
+      &::before {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 18px;
+        height: 18px;
+
+        background-color: $color-main;
+        border-radius: 1px;
+      }
+    }
+  }
+
+  &__input {
+
+    &--text {
+      display: block;
+      padding: 8px 0;
+
+      color: #fff;
+      background-color: $color-black-mobile;
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+      &::placeholder {
+        font-family: 'FuturaBookC', 'Arial', sans-serif;
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 400;
+        color: #fff;
+
+      }
+    }
+
+    &--checkbox {
+      display: none;
+
+      &:checked + .form__label--checkbox::after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+
+        width: 10px;
+        height: 8px;
+
+        background-image: url(../assets/img/checkbox-checked.svg);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+      }
+    }
+  }
+
+  &__btn {
+    padding: 20px 124px;
+    font-family: 'FuturaBookC', 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

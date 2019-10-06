@@ -2,7 +2,7 @@
   &__wrap {
     padding: 85px 18px 60px 18px;
 
-    background-color: $color-black;
+    background-color: $color-black-mobile;
     background-image: url(http://placehold.it/375x476);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -67,7 +67,7 @@
       flex-direction: column;
       justify-content: space-around;
 
-      background-color: $color-black;
+      background-color: $color-black-desktop;
 
       &--text {
         position: relative;
@@ -134,7 +134,7 @@
         text-transform: uppercase;
         color: #fff;
 
-        background-color: $color-black;
+        background-color: $color-black-desktop;
         border: none;
         cursor: pointer;
       }

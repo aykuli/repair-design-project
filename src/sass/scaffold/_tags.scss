@@ -9,7 +9,13 @@ body {
   font-weight: 400;
   color: #000;
 
-  background-color: $color-black;
+  background-color: $color-black-mobile;
+}
+
+@media (min-width: 1000px) {
+  body {
+    background-color: $color-black-desktop;
+  }
 }
 
 a {
