@@ -8,6 +8,7 @@
   background-color: #fff;
   border: none;
   border-radius: 50%;
+  cursor: pointer;
 
   &__arrow {
     position: relative;
@@ -18,6 +19,7 @@
 
     background-color: #fff;
     border: none;
+    cursor: pointer;
 
     &::before,
     &::after {

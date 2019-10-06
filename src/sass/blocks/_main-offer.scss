@@ -59,7 +59,6 @@
 
     display: flex;
     padding-top: 0;
-    margin-bottom: 48px;
 
     background-image: url(http://placehold.it/1358x707);
 
@@ -122,7 +121,7 @@
 
       display: block;
 
-      &--text {
+        &--text {
         display: flex;
         align-items: center;
         padding: 40px 48px;
@@ -137,6 +136,7 @@
 
         background-color: $color-black;
         border: none;
+        cursor: pointer;
       }
 
       &--icon {

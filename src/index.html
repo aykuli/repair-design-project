@@ -45,7 +45,6 @@
           </button>
         </div>
       </section>
-
       <section class="projects">
         <div class="projects__header">
           <h2 class="projects__title">Completed projects</h2>
@@ -58,20 +57,29 @@
             <li class="slider__nav--item">Rostov-on-Don Patriotic</li>
           </ul>
           <div class="slider__img--list">
-            <button class="slider__btn--prev" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>
-            <img  class="slider__img--item"
-                  src="http://placehold.it/340x242"
-                  alt="Rostov-on-Don, Admiral hall"
-                  width="340" height="242">
-            <img  class="slider__img--item"
-                  src="http://placehold.it/340x242"
-                  alt="Sochi Thieves"
-                  width="340" height="242">
-            <img  class="slider__img--item hidden"
-                  src="http://placehold.it/340x242"
-                  alt="Rostov-on-Don Patriotic"
-                  width="340" height="242">
-            <button class="slider__btn--next" type="button"><span class="visually-hidden">Следующий слайд</span></button>
+            <button class="slider__btn slider__btn--prev" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>
+            <picture>
+              <source media="(min-width: 1000px)"
+                      srcset="assets/img/projects-1-desktop.jpg">
+              <img  class="slider__img--item"
+                    src="assets/img/projects-1-mobile.jpg"
+                    alt="Rostov-on-Don, Admiral hall">
+            </picture>
+            <picture>
+              <source media="(min-width: 1000px)"
+                      srcset="assets/img/projects-2-desktop.jpg">
+              <img  class="slider__img--item"
+                    src="assets/img/projects-1-mobile.jpg"
+                    alt="Sochi Thieves">
+            </picture>
+            <picture>
+              <source media="(min-width: 1000px)"
+                      srcset="assets/img/projects-2-desktop.jpg">
+              <img  class="slider__img--item"
+                    src="assets/img/projects-1-mobile.jpg"
+                    alt="Rostov-on-Don Patriotic">
+            </picture>
+            <button class="slider__btn slider__btn--next" type="button"><span class="visually-hidden">Следующий слайд</span></button>
           </div>
         </div>
         <ul class="projects__desc--list">
@@ -145,6 +153,7 @@
           </div>
         </form>
       </section>
+
       <section class="repair">
         <h2 class="repair__title">Types of repair</h2>
         <img  src="http://placehold.it/28x28"
