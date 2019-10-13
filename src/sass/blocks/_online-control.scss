@@ -82,7 +82,7 @@
   .online-control {
     padding-top: 150px;
 
-    background: linear-gradient(to bottom, #000 0%, #000 500px, #fff 500px, #fff 100%);
+    background: linear-gradient(to bottom, $color-black-desktop 0%, $color-black-desktop 500px, #fff 500px, #fff 100%);
 
     &__text {
       max-width: 680px;

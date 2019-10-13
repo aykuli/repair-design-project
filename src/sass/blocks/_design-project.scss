@@ -25,9 +25,9 @@
   }
 }
 
-@media(min-width: 1200px) {
+@media(min-width: 800px) {
   .design-project {
-    background: linear-gradient(to top, $color-black-mobile 0%, $color-black-mobile 350px, #fff 350px, #fff 100%);;
+    background: linear-gradient(to top, $color-black-desktop 0%, $color-black-desktop 430px, #fff 430px, #fff 100%);
 
     &__title {
       font-size: 20px;

@@ -1,4 +1,9 @@
+.toggles {
+  align-items: center;
+}
+
 .toggle {
+  display: block;
   width: 10px;
   height: 10px;
   margin: 0;
@@ -19,7 +24,6 @@
 
     width: 40px;
     height: 1px;
-    margin-top: 4px;
 
     background-color: #fff;
     border: none;
