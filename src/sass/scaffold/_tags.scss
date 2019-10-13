@@ -3,7 +3,7 @@ body {
 
   @include reset-list;
 
-  font-family: 'FuturaDemiC Regular', 'Arial', sans-serif;
+  font-family: 'FuturaDemiC', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -22,7 +22,7 @@ a {
   margin: 0;
   padding: 0;
 
-  font-family: 'FuturaDemiC Regular', 'Arial', sans-serif;
+  font-family: 'FuturaDemiC', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -40,18 +40,28 @@ h1 {
   text-transform: uppercase;
 }
 
-h2 {
+
+h2, h3 {
   margin: 0;
   padding: 0;
 
   font-family: 'YesevaOne', 'Arial', 'sans-serif';
-  font-size: 22px;
-  line-height: 30px;
   font-weight: normal;
   font-style: normal;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 30px;
   letter-spacing: -0.07em;
   text-align: center;
   text-transform: uppercase;
+}
+
+h3 {
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: none;
 }
 
 p {

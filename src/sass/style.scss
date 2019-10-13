@@ -1,24 +1,32 @@
 @import './scaffold/vars';
 @import './scaffold/mixin';
 @import './scaffold/tags';
-@import './scaffold/scaffolding';
 @import './scaffold/outlines';
 @import './scaffold/fonts';
 @import './scaffold/outlines'; /////////// development file. delete later
 
+
+// sections in main
 @import './blocks/main-header';
-@import './blocks/site-nav';
 @import './blocks/main-offer';
 @import './blocks/projects';
+@import './blocks/online-control';
+@import './blocks/repair';
+@import './blocks/design-types';
+// @import '.';
+// @import '.';
+// @import '.';
+// @import '.';
+// @import '.';
+// @import '.';
+
+// nomadic blocks
+@import './blocks/site-nav';
+@import './blocks/form';
 @import './blocks/slider';
 @import './blocks/toggles';
-@import './blocks/online-control';
-@import './blocks/form';
+@import './blocks/cart';
+@import './blocks/request';
 // @import '.';
-// @import '.';
-// @import '.';
-// @import '.';
-// @import '.';
-// @import '.';
-// @import '.';
-// @import '.';
+
+@import './scaffold/scaffolding';

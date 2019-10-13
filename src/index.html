@@ -22,7 +22,7 @@
         </ul>
         <div class="site-nav__call">
           <a href="tel:+79287683239" class="site-nav__call-number">+7 (928) 768-32-39</a>
-          <a class="site-nav__call-btn btn btn--yellow" href="#">Request a call</a>
+          <a class="site-nav__call--btn btn btn--yellow" href="#">Request a call</a>
         </div>
       </nav>
     </header>
@@ -102,13 +102,12 @@
         </ul>
         <div class="toggles projects__toggles">
           <button type="button" class="toggle__arrow toggle__arrow--prev "><span class="visually-hidden">Предыдущий слайд</span></button>
-          <button type="button" class="toggle"><span class="visually-hidden">Первый слайд</span></button>
+          <button type="button" class="toggle toggle__active"><span class="visually-hidden">Первый слайд</span></button>
           <button type="button" class="toggle"><span class="visually-hidden">Второй слайд</span></button>
           <button type="button" class="toggle"><span class="visually-hidden">Третий слайд</span></button>
           <button type="button" class="toggle__arrow toggle__arrow--next"><span class="visually-hidden">Следующий слайд</span></button>
         </div>
       </section>
-
       <section class="online-control">
         <h2 class="online-control__title">Online control</h2>
         <img  src="http://placehold.it/114x28"
@@ -126,44 +125,66 @@
                     type="button"
                     data-state="visible">
             <span class="visually-hidden">Play or pause on player</span>
-            <svg width="10" height="11" viewBox="0 0 10 11" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+            <svg  fill="#fff"
+                  viewBox="0 0 10 11"
+                  width="10" height="11"
+                  xmlns="http://www.w3.org/2000/svg">
               <path d="M9.37646 5.71765L0.235288 10.9953L0.235289 0.439992L9.37646 5.71765Z" fill="#fff"/>
             </svg>
           </button>
         </div>
         <p class="online-control__text">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</p>
-        <form   action="#"
-                class="form online-control__form"
+        <form   class="form online-control__form"
+                action="#"
                 method="post">
           <div class="form__layout">
-            <label class="form__label--text" for="name">Name:</label>
-            <input class="form__input--text" type="text" id="name" name="name" placeholder="What is your name:">
+            <label  class="form__label--text"
+                    for="name-online-control">Name:</label>
+            <input  class="form__input--text"
+                    type="text"
+                    id="name-online-control"
+                    name="name-online-control"
+                    placeholder="What is your name:">
           </div>
           <div class="form__layout">
-            <label class="form__label--text" for="phone">Phone:</label>
-            <input class="form__input--text" type="tel" id="phone" name="phone" placeholder="Your phone number:">
+            <label  class="form__label--text"
+                    for="phone-online-control">Phone:</label>
+            <input  class="form__input--text"
+                    type="tel"
+                    id="phone-online-control"
+                    name="phone-online-control"
+                    placeholder="Your phone number:">
           </div>
           <div class="form__layout">
-            <input class="form__input--checkbox" type="checkbox" name="agreement" id="agreement" checked>
-            <label class="form__label--checkbox" for="agreement" tabindex="0">I agree to the processing of personal data</label>
+            <input  class="form__input--checkbox"
+                    type="checkbox"
+                    name="agreement-online-control"
+                    id="agreement-online-control"
+                    checked>
+            <label  class="form__label--checkbox"
+                    for="agreement-online-control"
+                    tabindex="0">I agree to the processing of personal data</label>
           </div>
-          <button class="btn btn--yellow form__btn" type="submit">Submit</button>
+          <button class="btn btn--yellow form__btn"
+                  type="submit">Submit</button>
         </form>
       </section>
-
       <section class="repair">
         <h2 class="repair__title">Types of repair</h2>
-        <img  src="http://placehold.it/28x28"
-          class="online-control__icon"
-          alt="control icon"
-          width="28" height="28">
+        <img  src="http://placehold.it/114x28"
+          class="repair__icon"
+          alt="repair icon"
+          width="114" height="28">
         <ul class="repair__list">
           <li class="repair__item cart">
+            <picture>
+              <source media="(max-width: 1250px)" srcset="http://placehold.it/340x365">
               <img  src="http://placehold.it/392x421"
                     class="cart__img"
-                    alt="Redecorating"
-                    width="392" height="421">
-              <h3 class="cart--title">Redecorating</h3>
+                    alt="Redecorating">
+            </picture>
+            <div class="cart__list--wrap">
+              <h3 class="cart__title">Redecorating</h3>
               <ul class="cart__list">
                 <li class="cart__item">Dismantling of old coatings</li>
                 <li class="cart__item">Wallpapering</li>
@@ -173,14 +194,17 @@
                 <li class="cart__item">Replacing sockets and switches</li>
                 <li class="cart__item">Replacing doors</li>
               </ul>
-              <p class="cart__cost">from 900 rub / m2</p>
+            </div>
+            <p class="cart__cost">from 900 rub / m2</p>
           </li>
           <li class="repair__item cart">
+            <picture>
+              <source media="(max-width: 1250px)" srcset="http://placehold.it/340x365">
               <img  src="http://placehold.it/392x421"
-                    class="cart__img"
-                    alt="Overhaul"
-                    width="392" height="421">
-              <h3 class="cart--title">Overhaul</h3>
+                    class="cart__img">
+            </picture>
+            <div class="cart__list--wrap">
+              <h3 class="cart__title">Overhaul</h3>
               <ul class="cart__list">
                 <li class="cart__item">Dismantling of old coatings</li>
                 <li class="cart__item">Wallpapering</li>
@@ -190,14 +214,18 @@
                 <li class="cart__item">Replacing sockets and switches</li>
                 <li class="cart__item">Replacing doors</li>
               </ul>
+              </div>
               <p class="cart__cost">from 1800 rub / m2</p>
           </li>
           <li class="repair__item cart">
+            <picture>
+              <source media="(max-width: 1250px)" srcset="http://placehold.it/340x365">
               <img  src="http://placehold.it/392x421"
                     class="cart__img"
-                    alt="Designer Repair"
-                    width="392" height="421">
-              <h3 class="cart--title">Designer Repair</h3>
+                    alt="Overhaul">
+            </picture>
+            <div class="cart__list--wrap">
+              <h3 class="cart__title">Designer Repair</h3>
               <ul class="cart__list">
                 <li class="cart__item">Dismantling of old coatings</li>
                 <li class="cart__item">Wallpapering</li>
@@ -207,75 +235,220 @@
                 <li class="cart__item">Replacing sockets and switches</li>
                 <li class="cart__item">Replacing doors</li>
               </ul>
+              </div>
               <p class="cart__cost">from 4000 rub / m2</p>
           </li>
         </ul>
-        <div class="request">
-          <ul class="request__list">
-            <ol class="request__item">Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</ol>
-            <ol class="request__item">Free metering</ol>
-            <ol class="request__item">Free consultation</ol>
-            <ol class="request__item">Get a cost estimate and the timing of your future repairs</ol>
+      </section>
+      <section class="request">
+        <h2 class="visually-hidden">Request for free measurement</h2>
+        <ol class="request__list">
+          <li class="request__item"><span>Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</span></li>
+          <li class="request__item"><span>Free metering</span></li>
+          <li class="request__item"><span>Free consultation</span></li>
+          <li class="request__item"><span>Get a cost estimate and the timing of your future repairs</span></li>
+        </ol>
+        <div class="request__form--wrap">
+          <form class="form request__form"
+                action="#"
+                method="post">
+            <p class="request__form--title">Leave a request for free departure of the measurer</p>
+            <div class="form__layout">
+              <label  class="form__label--text"
+                      for="name-request">Name:</label>
+              <input  class="form__input--text"
+                      type="text"
+                      id="name"
+                      name="name-request"
+                      placeholder="What is your name:">
+            </div>
+            <div class="form__layout">
+              <label  class="form__label--text"
+                      for="phone-request">Phone:</labelclass="form__label--text">
+              <input  class="form__input--text"
+                      type="tel"
+                      id="phone"
+                      name="phone-request"
+                      placeholder="Your phone number:">
+            </div>
+            <div class="form__layout">
+              <label  class="form__label--text"
+                      for="email-request">Email:</label>
+              <input  class="form__input--text"
+                      type="email"
+                      id="email-request"
+                      name="email-request" placeholder="Your email:">
+            </div>
+            <div class="form__layout">
+              <input  class="form__input--checkbox"
+                      type="checkbox"
+                      name="agreement-request"
+                      id="agreement-request">
+              <label  class="form__label--checkbox"
+                      for="agreement-request"
+                      tabindex="0"
+                      checked>I agree to the processing of personal data</label>
+            </div>
+            <button class="btn btn--yellow form__btn"
+                    type="submit">Call the measurer</button>
+          </form>
+          <p class="request__discount">Help save 10 - 20% of the cost of materials</p>
+        </div>
+      </section>
+
+      <section class="design-types">
+        <div class="design-types__column--text">
+          <h2 class="design-types__title">We realize your wildest fantasies</h2>
+          <ul class="design-types__list">
+            <li class="design-types__item"><a href="#" class="design-types__link design-types__link--current border-bottom">American classic</a></li>
+            <li class="design-types__item"><a href="#" class="design-types__link">Empire</a></li>
+            <li class="design-types__item"><a href="#" class="design-types__link">Classical</a></li>
+            <li class="design-types__item"><a href="#" class="design-types__link">Loft</a></li>
+            <li class="design-types__item"><a href="#" class="design-types__link">Minimalism</a></li>
+            <li class="design-types__item"><a href="#" class="design-types__link">Provence</a></li>
+            <li class="design-types__item"><a href="#" class="design-types__link">Romanticism</a></li>
+            <li class="design-types__item"><a href="#" class="design-types__link">Scandinavian style</a></li>
+            <li class="design-types__item"><a href="#" class="design-types__link">Mediterranean style</a></li>
+            <li class="design-types__item"><a href="#" class="design-types__link">High tech</a></li>
+            <li class="design-types__item"><a href="#" class="design-types__link">Eclecticism</a></li>
           </ul>
-          <div class="request__wrap">
-            <form action="#"
-                  class="form request__form"
-                  method="post">
-              <h3 class="request__form--title">Leave a request for free departure of the measurer</h3>
-              <div class="field-layout">
-                <label class="field-label" for="name">Name:</label>
-                <input class="field-input" type="text" id="name" name="name" placeholder="What is your name:">
-              </div>
-              <div class="field-layout">
-                <label class="field-label" for="phone">Phone:</label>
-                <input class="field-input" type="tel" id="phone" name="phone" placeholder="Your phone number:">
-              </div>
-              <div class="field-layout">
-                <label class="field-label" for="email">Phone:</label>
-                <input class="field-input" type="email" id="email" name="email" placeholder="Your email:">
-              </div>
-              <div class="field-layout">
-                <input class="agree-checkbox" type="checkbox" name="agreement" id="agreemen">
-                <label class="agree-label" for="agreement" tabindex="0" checked>I agree to the processing of personal data</label>
-              </div>
-              <button class="btn btn--yellow" type="submit">Call the measurer</button>
-            </form>
-            <p class="request_discount">Help save 10 - 20% of the cost of materials</p>
+        </div>
+        <ul class="design-types__list--imgs">
+          <li class="design-types__item--imgs">
+            <div class="design-types__imgs--column-right">
+              <img src="http://placehold.it/354x555" alt="American classic" widht="354" height="555">
+              <img src="http://placehold.it/354x350" alt="American classic" widht="354" height="350">
+            </div>
+            <div class="design-types__imgs--column-left">
+              <img src="http://placehold.it/354x275" alt="American classic" widht="354" height="275">
+              <img src="http://placehold.it/354x625" alt="American classic" widht="354" height="625">
+            </div>
+          </li>
+          <li class="design-types__item--imgs display-none">
+            <div class="design-types__imgs--column-right">
+              <img src="http://placehold.it/354x555" alt="Empire" widht="354" height="555">
+              <img src="http://placehold.it/354x350" alt="Empire" widht="354" height="350">
+            </div>
+            <div class="design-types__imgs--column-left">
+              <img src="http://placehold.it/354x275" alt="Empire" widht="354" height="275">
+              <img src="http://placehold.it/354x625" alt="Empire" widht="354" height="625">
+            </div>
+          </li>
+          <li class="design-types__item--imgs display-none">
+            <div class="design-types__imgs--column-right">
+              <img src="http://placehold.it/354x555" alt="Classical" widht="354" height="555">
+              <img src="http://placehold.it/354x350" alt="Classical" widht="354" height="350">
+            </div>
+            <div class="design-types__imgs--column-left">
+              <img src="http://placehold.it/354x275" alt="Classical" widht="354" height="275">
+              <img src="http://placehold.it/354x625" alt="Classical" widht="354" height="625">
+            </div>
+          </li>
+          <li class="design-types__item--imgs display-none">
+            <div class="design-types__imgs--column-right">
+              <img src="http://placehold.it/354x555" alt="Loft" widht="354" height="555">
+              <img src="http://placehold.it/354x350" alt="Loft" widht="354" height="350">
+            </div>
+            <div class="design-types__imgs--column-left">
+              <img src="http://placehold.it/354x275" alt="Loft" widht="354" height="275">
+              <img src="http://placehold.it/354x625" alt="Loft" widht="354" height="625">
+            </div>
+          </li>
+          <li class="design-types__item--imgs display-none">
+            <div class="design-types__imgs--column-right">
+              <img src="http://placehold.it/354x555" alt="Minimalism" widht="354" height="555">
+              <img src="http://placehold.it/354x350" alt="Minimalism" widht="354" height="350">
+            </div>
+            <div class="design-types__imgs--column-left">
+              <img src="http://placehold.it/354x275" alt="Minimalism" widht="354" height="275">
+              <img src="http://placehold.it/354x625" alt="Minimalism" widht="354" height="625">
+            </div>
+          </li>
+          <li class="design-types__item--imgs display-none">
+            <div class="design-types__imgs--column-right">
+              <img src="http://placehold.it/354x555" alt="Provence" widht="354" height="555">
+              <img src="http://placehold.it/354x350" alt="Provence" widht="354" height="350">
+            </div>
+            <div class="design-types__imgs--column-left">
+              <img src="http://placehold.it/354x275" alt="Provence" widht="354" height="275">
+              <img src="http://placehold.it/354x625" alt="Provence" widht="354" height="625">
+            </div>
+          </li>
+          <li class="design-types__item--imgs display-none">
+            <div class="design-types__imgs--column-right">
+              <img src="http://placehold.it/354x555" alt="Romanticism" widht="354" height="555">
+              <img src="http://placehold.it/354x350" alt="Romanticism" widht="354" height="350">
+            </div>
+            <div class="design-types__imgs--column-left">
+              <img src="http://placehold.it/354x275" alt="Romanticism" widht="354" height="275">
+              <img src="http://placehold.it/354x625" alt="Romanticism" widht="354" height="625">
+            </div>
+          </li>
+          <li class="design-types__item--imgs display-none">
+            <div class="design-types__imgs--column-right">
+              <img src="http://placehold.it/354x555" alt="Scandinavian style" widht="354" height="555">
+              <img src="http://placehold.it/354x350" alt="Scandinavian style" widht="354" height="350">
+            </div>
+            <div class="design-types__imgs--column-left display-none">
+              <img src="http://placehold.it/354x275" alt="Scandinavian style" widht="354" height="275">
+              <img src="http://placehold.it/354x625" alt="Scandinavian style" widht="354" height="625">
+            </div>
+          </li>
+          <li class="design-types__item--imgs display-none">
+            <div class="design-types__imgs--column-right">
+              <img src="http://placehold.it/354x555" alt="Mediterranean style" widht="354" height="555">
+              <img src="http://placehold.it/354x350" alt="Mediterranean style" widht="354" height="350">
+            </div>
+            <div class="design-types__imgs--column-left">
+              <img src="http://placehold.it/354x275" alt="Mediterranean style" widht="354" height="275">
+              <img src="http://placehold.it/354x625" alt="Mediterranean style" widht="354" height="625">
+            </div>
+          </li>
+          <li class="design-types__item--imgs display-none">
+            <div class="design-types__imgs--column-right">
+              <img src="http://placehold.it/354x555" alt="High tech" widht="354" height="555">
+              <img src="http://placehold.it/354x350" alt="High tech" widht="354" height="350">
+            </div>
+            <div class="design-types__imgs--column-left">
+              <img src="http://placehold.it/354x275" alt="High tech" widht="354" height="275">
+              <img src="http://placehold.it/354x625" alt="High tech" widht="354" height="625">
+            </div>
+          </li>
+          <li class="design-types__item--imgs display-none">
+            <div class="design-types__imgs--column-right">
+              <img src="http://placehold.it/354x555" alt="Eclecticism" widht="354" height="555">
+              <img src="http://placehold.it/354x350" alt="Eclecticism" widht="354" height="350">
+            </div>
+            <div class="design-types__imgs--column-left">
+              <img src="http://placehold.it/354x275" alt="Eclecticism" widht="354" height="275">
+              <img src="http://placehold.it/354x625" alt="Eclecticism" widht="354" height="625">
+            </div>
+          </li>
+        </ul>
+        <div class="design-types__slider slider">
+          <div class="slider__img--list">
+            <button class="slider__btn slider__btn--prev" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>
+            <img  class="slider__img--item"
+                    src="http://placehold.it/340x242"
+                    alt="Americal classic"
+                    widht="340" height="242">
+            <img  class="slider__img--item"
+                    src="http://placehold.it/340x242"
+                    alt="Empire"
+                    widht="340" height="242">
+            <img  class="slider__img--item"
+                    src="http://placehold.it/340x242"
+                    alt="Classical"
+                    widht="340" height="242">
+            <img  class="slider__img--item"
+                    src="http://placehold.it/340x242"
+                    alt="Loft"
+                    widht="340" height="242">
+            <button class="slider__btn slider__btn--next" type="button"><span class="visually-hidden">Следующий слайд</span></button>
           </div>
         </div>
       </section>
-      <section class="design-types">
-        <h2 class="design-types__title">We realize your wildest fantasies</h2>
-        <ul class="design-types__list">
-          <li class="design-types__item"><a href="#" class="design-types__link link--current border-bottom">American classic</a></li>
-          <li class="design-types__item"><a href="#" class="design-types__link">Empire</a></li>
-          <li class="design-types__item"><a href="#" class="design-types__link">Classical</a></li>
-          <li class="design-types__item"><a href="#" class="design-types__link">Loft</a></li>
-          <li class="design-types__item"><a href="#" class="design-types__link">Minimalism</a></li>
-          <li class="design-types__item"><a href="#" class="design-types__link">Provence</a></li>
-          <li class="design-types__item"><a href="#" class="design-types__link">Romanticism</a></li>
-          <li class="design-types__item"><a href="#" class="design-types__link">Scandinavian style</a></li>
-          <li class="design-types__item"><a href="#" class="design-types__link">Mediterranean style</a></li>
-          <li class="design-types__item"><a href="#" class="design-types__link">High tech</a></li>
-          <li class="design-types__item"><a href="#" class="design-types__link">Eclecticism</a></li>
-        </ul>
-        <div class="design-types__imgs slider__img--list">
-            <button class="slider__btn--next btn--yellow-round" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>
-            <img  class="slider__img--item"
-                  src="http://placehold.it/340x242"
-                  alt="clock">
-            <img  class="slider__img--item"
-                  src="http://placehold.it/340x242"
-                  alt="hall">
-            <img  class="slider__img--item"
-                  src="http://placehold.it/340x242"
-                  alt="sofa">
-            <img  class="slider__img--item"
-                  src="http://placehold.it/340x242"
-                  alt="glass table">
-            <button class="slider__btn--next btn--yellow-round" type="button"><span class="visually-hidden">Следующий слайд</span></button>
-          </div>
-      </section>
+
       <section class="design-project">
         <h2 class="design-project__title">design project</h2>
         <img  src="http://placehold.it/114x28"

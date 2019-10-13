@@ -10,10 +10,6 @@
 
   &__layout {
     margin-bottom: 60px;
-
-    &:nth-child(2) {
-      margin-bottom: 25px;
-    }
   }
 
   &__label {
@@ -54,7 +50,8 @@
 
     &--text {
       display: block;
-      padding: 8px 0;
+      width: 340px;
+      padding-bottom: 8px;
 
       color: #fff;
       background-color: $color-black-mobile;
@@ -67,7 +64,6 @@
         line-height: 25px;
         font-weight: 400;
         color: #fff;
-
       }
     }
 
@@ -99,5 +95,55 @@
     letter-spacing: 0.1rem;
     text-align: center;
     text-transform: uppercase;
+  }
+}
+
+@media(min-width: 800px) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+
+    &__layout {
+      margin-right: 50px;
+    }
+
+    &__btn {
+      width: 200px;
+      height: 50px;
+      padding: 0;
+
+    }
+
+    &__label {
+      &--text {
+        line-height: 22px;
+        color: rgba(54, 54, 54, 0.5);
+      }
+
+      &--checkbox {
+        color: #181818;
+      }
+    }
+
+    &__input {
+
+      &--text {
+        color: #363636;
+
+        background-color: #fff;
+        border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+
+        &::placeholder {
+          font-family: 'FuturaBookC', 'Arial', sans-serif;
+          font-size: 18px;
+          line-height: 25px;
+          font-weight: 400;
+          color: #363636;
+
+        }
+      }
+    }
   }
 }
