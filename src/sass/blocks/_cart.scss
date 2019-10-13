@@ -1,27 +1,37 @@
 .cart {
   position: relative;
-  // width: 340px;
-  // height: 484px;
+
+  margin: 0 auto;
+
   text-align: left;
+
+  &__wrap {
+    @include reset-list;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
   &__img {
     margin-bottom: 180px;
   }
 
   &__list {
+    position: relative;
+
     @include reset-list;
 
     list-style: inside;
 
     &--wrap {
       position: absolute;
-      bottom: 80px;
+      top: 223px;
       left: 0;
 
       width: 200px;
-      height: 200px;
 
-      padding: 20px 40px 20px 30px;
+      padding: 20px 40px 35px 30px;
 
       background: #FFFFFF;
       box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
@@ -41,7 +51,7 @@
 
   &__cost {
     position: absolute;
-    bottom: 60px;
+    bottom: -20px;
     left: 0;
 
     width: 190px;
@@ -63,6 +73,10 @@
 
 @media(min-width: 1400px) {
   .cart {
+    &__wrap {
+      padding: 0 100px;
+    }
+
     &__title {
       font-size: 18px;
       line-height: 25px;
@@ -73,7 +87,7 @@
         bottom: 30px;
 
         width: 270px;
-        height: 210px;
+        min-height: 210px;
         padding: 25px 30px 50px;
       }
     }
@@ -84,10 +98,10 @@
     }
 
     &__cost {
-      bottom: 15px;
+      bottom: -27px;
 
       width: 230px;
-      height: 55px;
+      height: 54px;
 
       font-size: 18px;
       line-height: 55px;

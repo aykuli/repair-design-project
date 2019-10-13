@@ -2,6 +2,7 @@
   padding-top: 35px;
 
   text-align: center;
+
   background: #fff;
 
   &__title {
@@ -12,14 +13,6 @@
     margin-bottom: 40px;
   }
 
-  &__list {
-    @include reset-list;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
   &__item {
     width: 340px;
     margin: 0 auto;
@@ -28,16 +21,8 @@
 
 @media(min-width: 1400px) {
   .repair {
-    padding: 35px 100px 0;
-
     &__icon {
       margin-bottom: 30px;
-    }
-
-    &__list {
-      justify-content: space-between;
-      margin-bottom: 130px;
-      margin-right: 10px;
     }
 
     &__item {
