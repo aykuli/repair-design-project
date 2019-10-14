@@ -4,7 +4,7 @@
   padding: 22px 18px;
 
   text-align: center;
-  background: linear-gradient(to bottom, $color-black-mobile 0%, $color-black-mobile 855px, #fff 500px, #fff 100%);
+  background: linear-gradient(to bottom, $color-black-mobile 0%, $color-black-mobile 855px, #fff 855px, #fff 100%);
 
   &__title {
     margin-bottom: 20px;
@@ -82,7 +82,7 @@
   .online-control {
     padding-top: 150px;
 
-    background: linear-gradient(to bottom, $color-black-desktop 0%, $color-black-desktop 500px, #fff 500px, #fff 100%);
+    background: linear-gradient(to bottom, $color-black-mobile 0%, $color-black-mobile 500px, #fff 500px, #fff 100%);
 
     &__text {
       max-width: 680px;
@@ -152,5 +152,11 @@
         }
       }
     }
+  }
+}
+
+@media(min-width: 1000px) {
+  .online-control {
+    background: linear-gradient(to bottom, $color-black-desktop 0%, $color-black-desktop 500px, #fff 500px, #fff 100%);
   }
 }

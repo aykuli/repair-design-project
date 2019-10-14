@@ -10,11 +10,10 @@
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   &__img {
-    margin-bottom: 250px;
+    margin-bottom: 150px;
   }
 
   &__list {
@@ -87,10 +86,15 @@
   }
 }
 
-@media(min-width: 1200px) {
+@media(min-width: 1400px) {
   .cart {
     &__wrap {
-      padding: 0 100px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__img {
+      margin-bottom: 220px;
     }
 
     &__title {

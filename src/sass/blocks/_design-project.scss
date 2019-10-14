@@ -21,11 +21,11 @@
 
     font-size: 15px;
     line-height: 20px;
-    color: #FFFFFF;
+    color: #fff;
   }
 }
 
-@media(min-width: 800px) {
+@media(min-width: 1100px) {
   .design-project {
     background: linear-gradient(to top, $color-black-desktop 0%, $color-black-desktop 430px, #fff 430px, #fff 100%);
 
@@ -43,5 +43,11 @@
       text-align: center;
       color: #363636;
     }
+  }
+}
+
+@media(min-width: 1400px) {
+  .design-project {
+    padding: 50px 100px 0;
   }
 }
