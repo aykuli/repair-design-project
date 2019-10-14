@@ -2,11 +2,11 @@
   display: none;
 }
 
-@media(min-width: 1200px) {
+@media(min-width: 1140px) {
   .steps {
     display: flex;
     justify-content: space-between;
-    padding: 0 100px 160px;
+    padding: 0 10px 160px;
 
     background-color: $color-black-desktop;
 
@@ -147,5 +147,11 @@
 
       display: block;
     }
+  }
+}
+
+@media(min-width:  1240px) {
+  .steps {
+    padding: 0 100px 160px;
   }
 }

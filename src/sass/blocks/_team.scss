@@ -97,6 +97,8 @@
 
 @media(min-width: 1100px) {
   .team {
+    padding-bottom: 80px;
+
     background: linear-gradient(to bottom, $color-black-desktop 0%, $color-black-desktop 400px, #fff 400px, #fff 100%);
 
     &__list {

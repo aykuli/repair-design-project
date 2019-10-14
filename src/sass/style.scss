@@ -5,6 +5,14 @@
 @import './scaffold/fonts';
 @import './scaffold/outlines'; /////////// development file. delete later
 
+// nomadic blocks
+@import './blocks/site-nav';
+@import './blocks/form';
+@import './blocks/slider';
+@import './blocks/toggles';
+@import './blocks/cart';
+@import './blocks/client';
+// @import '.';
 
 // sections in main
 @import './blocks/main-header';
@@ -18,18 +26,11 @@
 @import './blocks/steps';
 @import './blocks/team';
 @import './blocks/clients';
-// @import '.';
-// @import '.';
-// @import '.';
-// @import '.';
+@import './blocks/feedback';
+@import './blocks/contacts';
+@import './blocks/location';
+@import './blocks/main-footer';
 // @import '.';
 
-// nomadic blocks
-@import './blocks/site-nav';
-@import './blocks/form';
-@import './blocks/slider';
-@import './blocks/toggles';
-@import './blocks/cart';
-@import './blocks/client';
-// @import '.';
+
 @import './scaffold/scaffolding';

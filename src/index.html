@@ -137,25 +137,27 @@
         <form   class="form online-control__form"
                 action="#"
                 method="post">
-          <div class="form__layout">
-            <label  class="form__label--text"
-                    for="name-online-control">Name:</label>
-            <input  class="form__input--text"
-                    type="text"
-                    id="name-online-control"
-                    name="name-online-control"
-                    placeholder="What is your name:">
+          <div class="form__layout--wrap">
+            <div class="form__layout">
+              <label  class="form__label--text"
+                      for="name-online-control">Name:</label>
+              <input  class="form__input--text"
+                      type="text"
+                      id="name-online-control"
+                      name="name-online-control"
+                      placeholder="What is your name:">
+            </div>
+            <div class="form__layout">
+              <label  class="form__label--text"
+                      for="phone-online-control">Phone:</label>
+              <input  class="form__input--text"
+                      type="tel"
+                      id="phone-online-control"
+                      name="phone-online-control"
+                      placeholder="Your phone number:">
+            </div>
           </div>
-          <div class="form__layout">
-            <label  class="form__label--text"
-                    for="phone-online-control">Phone:</label>
-            <input  class="form__input--text"
-                    type="tel"
-                    id="phone-online-control"
-                    name="phone-online-control"
-                    placeholder="Your phone number:">
-          </div>
-          <div class="form__layout">
+          <div class="form__layout--checkbox">
             <input  class="form__input--checkbox"
                     type="checkbox"
                     name="agreement-online-control"
@@ -671,7 +673,6 @@
         </ul>
         <p class="team__about">Each employee of our company is a qualified full-time specialist with work experience of 6 years.<br>We do not have laborers and guest workers, each employee carries out work corresponding to his specialty.</p>
       </section>
-
       <section class="clients">
         <h2 class="clients__title">Our clients</h2>
         <img  class="clients__icon"
@@ -725,39 +726,41 @@
           </li>
         </ul>
       </section>
-      <section class="feedback">
-        <h2 class="feedback__title">Have any question?</h2>
+      <section class="contacts">
         <form   action="#"
-                class="form feedback__form"
+                class="form feedback"
                 method="post">
-          <div class="field-layout">
-            <label class="field-label" for="name">Name:</label>
-            <input class="field-input" type="text" id="name" name="name" placeholder="What is your name:">
+          <h2 class="contacts__title">Have any question?</h2>
+          <div class="form__layout--wrap">
+            <div class="form__layout">
+              <label class="form__label--text" for="name-feedback">Name:</label>
+              <input class="form__input--text" type="text" id="name-feedback" name="name-feedback" placeholder="What is your name:">
+            </div>
+            <div class="form__layout">
+              <label class="form__label--text" for="phone-feedback">Phone:</label>
+              <input class="form__input--text" type="tel" id="phone-feedback" name="phone-feedback" placeholder="Your phone number:">
+            </div>
+            <div class="form__layout">
+                <label class="form__label--text" for="question-feedback">Question:</label>
+                <input class="form__input--text" type="text" id="question-feedback" name="question" placeholder="I want to know:">
+            </div>
           </div>
-          <div class="field-layout">
-            <label class="field-label" for="phone">Phone:</label>
-            <input class="field-input" type="tel" id="phone" name="phone" placeholder="Your phone number:">
+          <div class="form__layout--checkbox">
+            <input class="form__input--checkbox" type="checkbox" name="agreement-feedback" id="agreement-feedback">
+            <label class="form__label--checkbox" for="agreement-feedback" tabindex="0" checked>I agree to the processing of personal data</label>
           </div>
-          <div class="field-layout">
-              <label class="field-label" for="question">Phone:</label>
-              <input class="field-input" type="text" id="question" name="question" placeholder="I want to know:">
-          </div>
-          <div class="field-layout">
-            <input class="agree-checkbox" type="checkbox" name="agreement" id="agreemen">
-            <label class="agree-label" for="agreement" tabindex="0" checked>I agree to the processing of personal data</label>
-          </div>
-          <button class="btn btn--yellow" type="submit">Submit</button>
+          <button class="btn btn--yellow form__btn" type="submit">Submit</button>
         </form>
-      </section>
-      <section class="location">
-        <h2 class="visually-hidden">Our address</h2>
-        <p class="location__address">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel <a href="tel:+79287683229" class="location__phone">+7 (928) 768 32 29</a></p>
-        <div class="location__links">
-          <a href="mailto:company@name.ru" class="location__link--icon email-icon"><span class="visually-hidden">Send us email</span></a>
-          <a href="https://www.instagram.com/rollingscopes/" class="location__link--icon insta-icon"><span class="visually-hidden">Our account in Instagram</span></a>
-        </div>
-        <div class="location__map">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4f36ebfa51724cfcf727ff32e2269bc8deb03acd13db24fcf62aaafd67cee759&amp;source=constructor" width="925" height="465" frameborder="0"></iframe>
+        <div class="location">
+          <h2 class="visually-hidden">Our address</h2>
+          <div class="location__map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4f36ebfa51724cfcf727ff32e2269bc8deb03acd13db24fcf62aaafd67cee759&amp;source=constructor" width="925" height="465" frameborder="0"></iframe>
+          </div>
+          <p class="location__address">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum<br>Tel <a href="tel:+79287683229" class="location__phone">+7 (928) 768 32 29</a></p>
+          <div class="location__links">
+            <a class="location__link location__link--email" href="mailto:company@name.ru"><span class="visually-hidden">Send us email</span></a>
+            <a class="location__link location__link--insta" href="https://www.instagram.com/rollingscopes/"><span class="visually-hidden">Our account in Instagram</span></a>
+          </div>
         </div>
       </section>
     </main>

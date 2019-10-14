@@ -4,7 +4,7 @@
   padding: 22px 18px;
 
   text-align: center;
-  background: linear-gradient(to bottom, $color-black-mobile 0%, $color-black-mobile 855px, #fff 855px, #fff 100%);
+  background: linear-gradient(to bottom, $color-black-mobile 0%, $color-black-mobile 845px, #fff 845px, #fff 100%);
 
   &__title {
     margin-bottom: 20px;
@@ -135,15 +135,22 @@
     &__form {
       & .form {
         &__layout {
-          &:nth-child(2) {
-            margin-bottom: 25px;
+          margin-bottom: 0;
+
+          &:last-child {
+            margin-bottom: 0;
           }
 
-          &:nth-child(3) {
+          &--wrap {
+            display: flex;
+          }
+
+          &--checkbox {
+            margin-top: 35px;
+
             order: 2;
           }
         }
-
 
         &__input {
           &--text {

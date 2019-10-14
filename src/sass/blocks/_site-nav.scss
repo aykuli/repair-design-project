@@ -34,8 +34,12 @@
   }
 }
 
-@media(min-width: 1440px) {
+@media(min-width: 1200px) {
   .site-nav {
+    padding: 24px 100px 24px 82px;
+
+    background-color: $color-black-desktop;
+
     &__logo {
       margin-top: 13px;
 
