@@ -1,12 +1,16 @@
 .main-offer {
   &__wrap {
+    position: relative;
+
     padding: 85px 18px 60px 18px;
 
-    background-color: $color-black-mobile;
-    background-image: url(http://placehold.it/375x476);
+    background-color: rgba($color: $color-black-mobile, $alpha: .7);
+    background-image: url(../assets/img/bg-mobile-main-offer.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
+    background-blend-mode: multiply;
+
   }
 
   &__instagram {
@@ -14,7 +18,7 @@
   }
 
   &__title {
-    max-width: 550px;
+    max-width: 300px;
     margin-bottom: 16px;
 
     font-size: 23px;
@@ -40,11 +44,15 @@
 
   &__btn {
     display: block;
+    max-width: 500px;
     padding: 19px 70px;
     margin-bottom: 26px;
 
     text-align: center;
+
     box-shadow: none;
+
+    cursor: pointer;
 
     &--wrap {
       display: flex;
@@ -53,21 +61,28 @@
   }
 }
 
-@media(min-width: 1200px) {
+@media(min-width: 500px) {
+  .main-offer {
+    &__wrap {
+      width: 100%;
+      background-image: url(../../assets/img/bg-desktop-main-offer.jpg);
+    }
+  }
+}
+
+@media(min-width: 800px) {
   .main-offer {
     position: relative;
 
     display: flex;
     padding-top: 0;
 
-    background-image: url(http://placehold.it/1358x707);
-
     &__instagram {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
 
-      background-color: $color-black-desktop;
+      background-color: $color-black-mobile;
 
       &--text {
         position: relative;
@@ -87,6 +102,10 @@
 
           background-color: $color-main;
         }
+
+        &:hover, &:active {
+          text-shadow: 0px 5px 10px rgba(227, 184, 115, 0.3);
+        }
       }
     }
 
@@ -94,6 +113,8 @@
       padding: 194px 0 190px 60px;
     }
     &__title {
+      max-width: 520px;
+
       font-size: 40px;
       line-height: 53px;
     }
@@ -134,7 +155,7 @@
         text-transform: uppercase;
         color: #fff;
 
-        background-color: $color-black-desktop;
+        background-color: $color-black-mobile;
         border: none;
         cursor: pointer;
       }
@@ -173,8 +194,26 @@
 
           transform: rotate(-45deg);
         }
-      }
 
+        &:hover, &:active {
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3),
+                      inset 0px 5px 15px rgba(227, 184, 115, 0.3);
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 1000px) {
+  .main-offer {
+    &__instagram {
+      background-color: $color-black-desktop;
+    }
+
+    &__scroll {
+      &--text {
+        background-color: $color-black-desktop;
+      }
     }
   }
 }

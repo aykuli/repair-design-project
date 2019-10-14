@@ -10,13 +10,19 @@
   margin-right: 18px;
   padding: 0;
 
-  background-color: rgba(255, 255, 255, 0.3);;
+  background-color: #fff;
   border: none;
   border-radius: 50%;
+  opacity: 0.5;
+
   cursor: pointer;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
   &__active {
-    background-color: #fff;
+    opacity: 1;
   }
 
   &__arrow {

@@ -1,10 +1,13 @@
 .site-nav {
   display: flex;
   justify-content: space-between;
+  padding: 24px 18px 20px 18px;
 
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
+
+  background-color: $color-black-mobile;
 
   &__logo {
     display: block;
@@ -13,9 +16,9 @@
   }
 
   &__list {
-    @include reset-list;
-
     display: none;
+
+    @include reset-list;
   }
 
   &__call {
@@ -34,9 +37,9 @@
   }
 }
 
-@media(min-width: 1200px) {
+@media(min-width: 1000px) {
   .site-nav {
-    padding: 24px 100px 24px 82px;
+    padding: 24px 10px 24px 10px;
 
     background-color: $color-black-desktop;
 
@@ -49,11 +52,12 @@
 
     &__list {
       display: flex;
+      justify-content: space-between;
+      min-width: 400px;
     }
 
     &__item {
       margin: 0;
-      margin-right: 47px;
       padding: 0;
     }
 
@@ -73,7 +77,7 @@
 
     &__call {
       &-number {
-        margin: auto 45px auto;
+        margin: auto 45px;
 
         font-size: 14px;
         line-height: 16px;
@@ -86,6 +90,19 @@
         padding: 13px 33px;
       }
     }
+  }
+}
 
+@media(min-width: 1400px) {
+  .site-nav {
+    padding: 24px 100px 24px 82px;
+
+    &__item {
+      margin-right: 47px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }

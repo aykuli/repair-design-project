@@ -18,8 +18,9 @@
 
   &__text {
     max-width: 320px;
-    line-height: 22px;
     margin: 0 auto;
+
+    line-height: 22px;
   }
 
   &__slider {
@@ -48,8 +49,6 @@
         margin-bottom: 10px;
 
         font-family: 'YesevaOne', 'Arial', sans-serif;
-        font-style: normal;
-        font-weight: normal;
         font-size: 14px;
         line-height: 20px;
         text-align: left;
@@ -107,7 +106,7 @@
 
         position: absolute;
         bottom: 15px;
-        right: -25px;
+        right: -55px;
 
         width: 92px;
         height: 2px;

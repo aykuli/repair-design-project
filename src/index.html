@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
-  <title>repair-design-project from Rolling Scope school</title>
+  <title>Repair design project from Rolling Scope school</title>
 </head>
 <body>
   <div class="page__wrap">
-    <header class="main-header">
-      <nav class="site-nav main-header__nav">
+    <header>
+      <nav class="site-nav">
         <h1 class="site-nav__logo">IC "Repair Design Project"</h1>
         <ul class="site-nav__list">
           <li class="site-nav__item"><span class="site-nav__link site-nav__current">Home</span></li>
@@ -51,11 +51,11 @@
           <p class="projects__text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
         </div>
         <div class="projects__slider slider">
-          <ul class="slider__nav--list">
-            <li class="slider__nav--item slider__nav--item-current">Rostov-on-Don, Admiral</li>
-            <li class="slider__nav--item">Sochi Thieves</li>
-            <li class="slider__nav--item">Rostov-on-Don Patriotic</li>
-          </ul>
+          <div class="slider__nav--list">
+            <button class="slider__nav--item slider__nav--item-current" type="button">Rostov-on-Don, Admiral</button>
+            <button class="slider__nav--item" type="button">Sochi Thieves</button>
+            <button class="slider__nav--item" type="button">Rostov-on-Don Patriotic</button>
+          </div>
           <div class="slider__img--list">
             <button class="slider__btn slider__btn--prev" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>
             <picture>
@@ -110,14 +110,15 @@
       </section>
       <section class="online-control">
         <h2 class="online-control__title">Online control</h2>
-        <img  src="http://placehold.it/114x28"
+        <img  src="assets/img/camera.svg"
               class="online-control__icon"
               alt="control icon"
               width="114" height="28">
         <div class="online-control__video--wrap">
           <video  class="online-control__video"
-                  poster="http://placehold.it/340x207">
+                  poster="assets/img/poster-online-control.jpg">
                   <source src="https://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+                  <source src="https://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4" media="(min-width: 800px)">
                   Сожалею; ваш браузер не поддерживает HTML5 видео в MP4 с H.264.
           </video>
           <button   class="online-control__video--play-btn"
@@ -765,7 +766,7 @@
       </section>
     </main>
     <footer class="main-footer">
-        <nav class="site-nav main-footer__nav">
+        <nav class="site-nav">
           <p class="site-nav__logo">IC "Repair Design Project"</p>
           <ul class="site-nav__list">
             <li class="site-nav__item"><span class="site-nav__link site-nav__current">Home</span></li>
@@ -777,7 +778,7 @@
           </ul>
           <div class="site-nav__call">
             <a href="tel:+79287683239" class="site-nav__call-number">+7 (928) 768-32-39</a>
-            <a class="site-nav__call-btn btn btn--yellow" href="#">Request a call</a>
+            <a class="site-nav__call--btn btn btn--yellow" href="#">Request a call</a>
           </div>
         </nav>
     </footer>
