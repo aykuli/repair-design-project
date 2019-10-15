@@ -27,7 +27,7 @@
       max-width: 290px;
       margin: 0 auto 40px;
 
-      font-family: 'FuturaDemiC';
+      font-family: FuturaDemiC, Arial, sans-serif;
       font-size: 20px;
       line-height: 25px;
       text-align: center;
@@ -61,7 +61,7 @@
         &--text {
           width: 408px;
 
-          font-family: 'FuturaMediumC';
+          font-family: FuturaMediumC, Arial, sans-serif;
           font-size: 18px;
           line-height: 25px;
 
@@ -79,7 +79,7 @@
         width: 230px;
         margin-left: auto;
 
-        font-family: 'FuturaDemiC';
+        font-family: FuturaDemiC, Arial, sans-serif;
         font-size: 13px;
         line-height: 50px;
       }
@@ -87,21 +87,30 @@
   }
 
   &__discount {
-    width: 220px;
+    display: flex;
+    align-items: center;
+    width: 330px;
     height: 72px;
-    padding: 12px 0 0 100px;
 
-    font-family: 'FuturaDemiC';
-    font-size: 20px;
-    line-height: 25px;
-    color: $color-main;
-    text-align: left;
+    &--text {
+      font-family: FuturaDemiC, Arial, sans-serif;
+      font-size: 20px;
+      line-height: 25px;
+      text-align: left;
+      text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+      color: $color-main;
+    }
 
-    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    &--icon {
+      width: 40px;
+      height: 33px;
+      margin-right: 25px;
+      padding: 20px 16px;
 
-    background-image: url(http://placehold.it/72x72);
-    background-repeat: no-repeat;
-    background-position: 0 0;
+      background-color: $color-main;
+      box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
+      border-radius: 50%;
+    }
   }
 
   &__list {
@@ -125,7 +134,7 @@
     display: flex;
     height: 42px;
 
-    font-family: 'FuturaMediumC';
+    font-family: FuturaMediumC, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -150,7 +159,7 @@
       height: 42px;
       margin-right: 17px;
 
-      font-family: 'YesevaOne';
+      font-family: YesevaOne, Arial, sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;

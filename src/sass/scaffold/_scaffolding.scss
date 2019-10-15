@@ -26,12 +26,14 @@
 .btn {
   border: none;
   border-radius: 2px;
+  box-sizing: border-box;
+
+  cursor: pointer;
 
   &--yellow {
     color: #fff;
 
     background: $color-main;
-    box-sizing: border-box;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
 
     &:hover, &:active {
@@ -41,7 +43,6 @@
 
   &--ghost {
     border: 1px solid #fff;
-    box-sizing: border-box;
 
     &:hover, &:active {
       background-color: rgba($color: #fff, $alpha: .2);

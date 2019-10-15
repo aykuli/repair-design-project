@@ -33,7 +33,7 @@
 
     cursor: pointer;
 
-    &:hover, &:active {
+    &:hover, &:focus, &:active {
       opacity: 1;
     }
 
@@ -97,7 +97,7 @@
         margin-right: 60px;
         padding: 0;
 
-        font-family: 'Yeseva One', 'Arial', sans-serif;
+        font-family: YesevaOne, Arial, sans-serif;
         font-size: 14px;
         line-height: 19px;
         color: rgba(255, 255, 255, 0.3);

@@ -3,26 +3,34 @@ body {
 
   @include reset-list;
 
-  font-family: 'FuturaDemiC', 'Arial', sans-serif;
+  font-family: FuturaDemiC, Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   color: #181818;
 
   background-color: #ffb;
+
+  isolation: isolate;
 }
 
 a {
   margin: 0;
   padding: 0;
 
-  font-family: 'FuturaDemiC', 'Arial', sans-serif;
+  font-family: FuturaDemiC, Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+* {
+  &:focus {
+    outline: 2px dotted rgb(32, 224, 238);
+  }
 }
 
 h1 {
@@ -39,7 +47,7 @@ h2, h3 {
   margin: 0;
   padding: 0;
 
-  font-family: 'YesevaOne', 'Arial', 'sans-serif';
+  font-family: YesevaOne, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -62,7 +70,7 @@ p {
   margin: 0;
   padding: 0;
 
-  font-family: 'FuturaBookC', 'Arial', 'sans-serif';
+  font-family: FuturaBookC, Arial, sans-serif;
   text-align: center;
 }
 

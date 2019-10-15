@@ -4,7 +4,7 @@
   max-width: 375px;
   margin: 0 auto;
 
-  font-family: 'FuturaBookC', 'Arial', sans-serif;
+  font-family: FuturaBookC, Arial, sans-serif;
   color: #fff;
   text-align: left;
 
@@ -66,7 +66,7 @@
       border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
       &::placeholder {
-        font-family: 'FuturaBookC', 'Arial', sans-serif;
+        font-family: FuturaBookC, Arial, sans-serif;
         font-size: 18px;
         line-height: 25px;
         font-weight: 400;
@@ -75,7 +75,7 @@
     }
 
     &--checkbox {
-      display: none;
+      opacity: 0;
 
       &:checked + .form__label--checkbox::after {
         content: '';
@@ -90,11 +90,15 @@
         background-repeat: no-repeat;
         background-position: 0 0;
       }
+
+      &:focus + .form__label--checkbox {
+        outline: 1px dotted rgb(32, 224, 238);
+      }
     }
   }
 
   &__btn {
-    font-family: 'FuturaBookC', 'Arial', sans-serif;
+    font-family: FuturaBookC, Arial, sans-serif;
     font-size: 15px;
     line-height: 51px;
     font-weight: 500;
@@ -137,21 +141,25 @@
     }
 
     &__input {
-
       &--text {
         width: 230px;
+        padding: 10px 0;
 
+        font-family: FuturaBookC, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 24px;
         color: #363636;
 
         background-color: #fff;
         border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 
         &::placeholder {
-          font-family: 'FuturaBookC', 'Arial', sans-serif;
-          font-size: 18px;
-          line-height: 25px;
-          font-weight: 400;
           color: #363636;
+        }
+      }
+      &--checkbox {
+        &:focus + .form__label--checkbox {
+          outline: 1px dotted rgb(32, 224, 238);
         }
       }
     }

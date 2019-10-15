@@ -21,7 +21,7 @@
   }
 
   &__address, &__phone {
-    font-family: 'YesevaOne', 'Arial', sans-serif;
+    font-family: YesevaOne, Arial, sans-serif;
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
@@ -40,20 +40,35 @@
   }
 
   &__link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 39px;
     height: 39px;
 
     background-color: $color-main;
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    border-radius: 50%;
 
     &--email {
-      background-image: url(http://placehold.it/39x39);
+      & svg {
+        width: 19.5px;
+        height: 15.6px;
+      }
     }
 
     &--insta {
-      background-image: url(http://placehold.it/39x39);
+      & svg {
+        width: 16.7px;
+        height: 16.7px;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.5);
+    }
+
+    &:focus, &:active {
+      outline: 2px dotted rgb(32, 224, 238);
     }
   }
 }
@@ -75,18 +90,26 @@
 
     &__links {
       width: 70px;
+      margin-bottom: 40px;
     }
 
     &__link {
       width: 28px;
       height: 28px;
-      // &--email {
-      //   background-image: url(http://placehold.it/39x39);
-      // }
 
-      // &--insta {
-      //   background-image: url(http://placehold.it/39x39);
-      // }
+      &--email {
+        & svg {
+          width: 14px;
+          height: 11.2px;
+        }
+      }
+
+      &--insta {
+        & svg {
+          width: 12px;
+          height: 12px;
+        }
+      }
     }
   }
 }

@@ -26,7 +26,7 @@
   &__img {
     margin-right: 25px;
 
-    clip-path: circle(50%);
+    border-radius: 50%;
   }
 
   &__review {
@@ -51,7 +51,7 @@
   &__square, &__work-day  {
     padding: 0 20px 0 55px;
 
-    font-family: 'YesevaOne';
+    font-family: YesevaOne, Arial, sans-serif;
     font-size: 17px;
     line-height: 54px;
     text-transform: uppercase;
@@ -61,11 +61,11 @@
     background-position: 15px 50%;
   }
   &__square {
-    background-image: url(http://placehold.it/32x32);
+    background-image: url(../assets/img/area.svg);
     border-right: 1px solid #fff;
   }
 
   &__work-day {
-    background-image: url(http://placehold.it/32x32);
+    background-image: url(../assets/img/calendar.svg);
   }
 }

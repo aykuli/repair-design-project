@@ -21,11 +21,14 @@
   .design-types {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 100px;
     padding: 0 40px;
 
-    background-image: url(../assets/img/bg-design-type.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 115px;
+    background-image: url(../assets/img/bg-desktop-design-type.jpg),
+                      linear-gradient(120.96deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 115px, 0 115px;
+    background-blend-mode: multiply;
 
     &__title {
       margin-top: 250px;
@@ -38,7 +41,7 @@
 
     &__link {
       padding-bottom: 5px;
-      font-family: 'ProximaNova';
+      font-family: ProximaNova, Arial, sans-serif;
       font-size: 20px;
       line-height: 34px;
       text-transform: none;
@@ -55,6 +58,7 @@
 
       &--imgs {
         @include reset-list;
+        margin-bottom: -100px;
 
         display: block;
       }
