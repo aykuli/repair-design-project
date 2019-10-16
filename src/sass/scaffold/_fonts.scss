@@ -3,8 +3,8 @@
   font-style: normal;
   font-weight: 400;
   src:  local('FuturaBookC'), local('FuturaBookC'),
-        url('../../assets/fonts/FuturaBookC.woff2') format('woff2'),
-        url('../../assets/fonts/FuturaBookC.woff') format('woff');
+        url('../assets/fonts/FuturaBookC.woff2') format('woff2'),
+        url('../assets/fonts/FuturaBookC.woff') format('woff');
 }
 
 @font-face {
@@ -12,8 +12,8 @@
   font-style: normal;
   font-weight: 400;
   src:  local('FuturaDemiC'), local('FuturaDemiC'),
-        url('../../assets/fonts/FuturaDemiC.woff2') format('woff2'),
-        url('../../assets/fonts/FuturaDemiC.woff') format('woff');
+        url('../assets/fonts/FuturaDemiC.woff2') format('woff2'),
+        url('../assets/fonts/FuturaDemiC.woff') format('woff');
 }
 
 @font-face {
@@ -30,8 +30,8 @@
   font-style: normal;
   font-weight: 400;
   src:  local('ProximaNova'), local('ProximaNova'),
-        url('../../assets/fonts/ProximaNova-Regular.woff') format('woff'),
-        url('../../assets/fonts/ProximaNova-Regular.woff2') format('woff2');
+        url('../assets/fonts/ProximaNova-Regular.woff') format('woff'),
+        url('../assets/fonts/ProximaNova-Regular.woff2') format('woff2');
 }
 
 @font-face {

@@ -1,7 +1,8 @@
 @import './scaffold/vars';
 @import './scaffold/mixin';
-@import './scaffold/tags';
 @import './scaffold/fonts';
+@import './scaffold/tags';
+@import './scaffold/scaffolding';
 
 // nomadic blocks
 @import './blocks/site-nav';
@@ -27,5 +28,3 @@
 @import './blocks/contacts';
 @import './blocks/location';
 @import './blocks/main-footer';
-
-@import './scaffold/scaffolding';
