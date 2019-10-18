@@ -8,26 +8,22 @@
   &__img {
     &--list {
       position: relative;
-      margin: 0 auto;
 
-      outline: 1px solid red;
+      margin: 0 auto;
     }
 
     &--items {
       position: relative;
 
-      display: flex;
-      flex-wrap: nowrap;
       width: 100%;
-      margin: 0 auto;
 
       overflow: hidden;
     }
 
-    &--item {
+    &--item-in-projects {
       position: relative;
 
-      margin: 0 auto;
+      width: 100%;
 
       animation: 1s ease-in-out;
       display: none;
@@ -41,7 +37,7 @@
   &--next {
     position: absolute;
     top: 0;
-    width: 100%;
+    // width: 100%;
   }
 
   &--to-left {
@@ -187,10 +183,13 @@
         height: 482px;
       }
 
-      &--item {
+      &--item-in-projects {
         width: 679px;
         margin-right: 21px;
+        // display: none;
+        display: block;
       }
+
       &--items {
         display: flex;
         flex-wrap: nowrap;
