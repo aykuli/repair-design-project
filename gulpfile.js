@@ -15,6 +15,10 @@ gulp.task("html", function() {
   return gulp.src("src/*.html").pipe(gulp.dest("build/"));
 });
 
+gulp.task("script", function() {
+  return gulp.src("src/scripts/*.js").pipe(gulp.dest("build/scripts/"));
+});
+
 gulp.task("clearBuild", function() {
   return del(["build/*"]);
 });
@@ -55,9 +59,12 @@ gulp.task("watch", function() {
   gulp
     .watch("src/*.html", gulp.series("html"))
     .on("change", browserSync.reload);
+  gulp
+    .watch("src/scripts/*.js", gulp.series("script"))
+    .on("change", browserSync.reload);
 });
 
 gulp.task("dev",
   gulp.series(
-    gulp.series("clearHTMLCSS", gulp.parallel("html", "css")), "watch")
+    gulp.series("clearHTMLCSS", gulp.parallel("html", "css", "script")), "watch")
 );
