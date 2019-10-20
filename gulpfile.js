@@ -47,7 +47,7 @@ gulp.task("fonts", function() {
 gulp.task('build',
   gulp.series(
       'clearBuild',
-      gulp.parallel('html', 'css', 'fonts', 'img' )
+      gulp.parallel('html', 'css', 'fonts', 'img', 'script')
   )
 );
 

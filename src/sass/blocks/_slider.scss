@@ -10,6 +10,8 @@
       position: relative;
 
       margin: 0 auto;
+
+      overflow: hidden;
     }
 
     &--items {
@@ -22,55 +24,13 @@
 
     &--item-in-projects {
       position: relative;
-
       width: 100%;
 
-      animation: 1s ease-in-out;
       display: none;
-    }
-  }
 
-  &--active, &--next {
-    display: block;
-  }
-
-  &--next {
-    position: absolute;
-    top: 0;
-    // width: 100%;
-  }
-
-  &--to-left {
-    animation-name: left;
-  }
-
-  &--to-right {
-    animation-name: right;
-    animation-direction: reverse;
-  }
-
-  &--from-left {
-    animation-name: left;
-    animation-direction: reverse;
-  }
-
-  &--from-right {
-    animation-name: right;
-  }
-
-  @keyframes left {
-    from {
-      left: 0;
-    } to {
-      left: -100%;
-    }
-  }
-
-  @keyframes right {
-    from {
-      left: 100%;
-    } to {
-      left: 0;
+      & img {
+        width: 100%;
+      }
     }
   }
 
@@ -139,7 +99,53 @@
       right: 13px;
     }
   }
+
+  // for JS
+  &--active-in-projects, &--next-in-projects {
+    display: block;
+  }
+
+  &--next-in-projects {
+    position: absolute;
+    top: 0;
+  }
+
+  &--to-left {
+    animation-name: left;
+  }
+
+  &--to-right {
+    animation-name: right;
+    animation-direction: reverse;
+  }
+
+  &--from-left {
+    animation-name: left;
+    animation-direction: reverse;
+  }
+
+  &--from-right {
+    animation-name: right;
+  }
+
+  @keyframes left {
+    from {
+      left: 0;
+    } to {
+      left: -100%;
+    }
+  }
+
+  @keyframes right {
+    from {
+      left: 100%;
+    } to {
+      left: 0;
+    }
+  }
+  // END of for JS
 }
+
 
 @media(min-width: 1000px) {
   .slider {
@@ -184,16 +190,20 @@
       }
 
       &--item-in-projects {
+        flex-shrink: 0;
         width: 679px;
+        height: 482px;
         margin-right: 21px;
-        // display: none;
         display: block;
       }
 
       &--items {
         display: flex;
         flex-wrap: nowrap;
+
+        overflow: visible;
       }
+
     }
 
     &__btn {
@@ -236,21 +246,34 @@
       }
     }
 
-    &__position {
-      &--first {
-        transform: translate3d(0px, 0, 0);
-      }
+    &--to-right-desktop {
+      animation-duration: 1s;
+      animation-name: right-desktop;
+    }
 
-      &--second {
-        transform: translate3d(-700px, 0, 0);
-      }
+    &--null-position {
+      left: 0;
+    }
 
-      &--third {
-        transform: translate3d(-1400px, 0, 0);
-      }
-      &--fourth {
-        transform: translate3d(-2100px, 0, 0);
+    @keyframes right-desktop {
+      from {
+        left: 0;
+      } to {
+        left: -700px;
       }
     }
   }
+}
+
+.first-flex {
+  order: -1;
+
+}
+
+.second-flex {
+  order: 0;
+}
+
+.third-flex {
+  order: 1;
 }
