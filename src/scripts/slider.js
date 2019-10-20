@@ -3,70 +3,57 @@ let items = document.querySelectorAll('.slider__img--item-in-projects');
 let currentItem = 0;
 let isEnabled = true;
 
-if (window.innerWidth > 1000) {
-  for (let i = 0; i < items.length; i++) {
-    items[i].classList.remove('slider--active-in-projects');
-  }
-}
-
 function changeCurrentItem(n) {
+  console.log('выполняется changeCurrentItem ----------');
   currentItem = (n + items.length) % items.length;
 }
 
-function hideItem(direction) {
+function previousItem(n) {
+  document.querySelector('.slider__img--items-in-projects').classList.remove('slider--null-position', 'slider--prev-position');
+  document.querySelector('.slider__img--items-in-projects').classList.add('slider--to-right');
   isEnabled = false;
+  document.querySelector('.slider__img--items-in-projects').addEventListener('animationend', function() {
+    items[currentItem].classList.remove('second-flex', 'third-flex', 'slider--active-in-projects');
+    items[currentItem].classList.add('first-flex', 'slider--prev-in-projects');
 
-  items[currentItem].classList.add(direction);
+    items[ (currentItem + 1) % items.length ].classList.add('second-flex', 'slider--active-in-projects');
+    items[ (currentItem + 1) % items.length ].classList.remove( 'first-flex', 'third-flex', 'slider--prev-in-projects');
 
-    if (window.innerWidth < 1000) {
-      items[currentItem].addEventListener('animationend', function() {
-        this.classList.remove('slider--active-in-projects', direction);
-      });
-    }
-}
+    items[ (currentItem + 2) % items.length ].classList.add('third-flex');
+    items[ (currentItem + 2) % items.length ].classList.remove('first-flex', 'second-flex',  'slider--active-in-projects',  'slider--prev-in-projects');
 
-function showItem(direction) {
-  if (window.innerWidth < 1000) {
-    items[currentItem].classList.add(direction, 'slider--next-in-projects');
-    items[currentItem].addEventListener('animationend', function() {
-      this.classList.remove('slider--next-in-projects', direction);
-      this.classList.add('slider--active-in-projects');
-    });
-  }
+    this.classList.remove('slider--to-right-desktop', 'slider--to-right');
+    this.classList.add('slider--prev-position');
+    changeCurrentItem(n + 1);
+  });
   isEnabled = true;
 }
 
-function previousItem(n) {
-  hideItem('slider--to-right');
-  changeCurrentItem(n - 1);
-  showItem('slider--from-left');
-}
-
 function nextItem(n) {
-  if (window.innerWidth < 1000) {
-    hideItem('slider--to-left');
-    changeCurrentItem(n + 1);
-    showItem('slider--from-right');
+  document.querySelector('.slider__img--items-in-projects').classList.remove('slider--null-position');
+  document.querySelector('.slider__img--items-in-projects').classList.remove('slider--prev-position');
+
+  if (window.innerWidth > 1000) {
+    document.querySelector('.slider__img--items-in-projects').classList.add('slider--to-left-desktop');
   } else {
-    document.querySelector('.slider__img--items-in-projects').classList.remove('slider--null-position');
-    document.querySelector('.slider__img--items-in-projects').classList.add('slider--to-right-desktop');
-
-    document.querySelector('.slider__img--items-in-projects').addEventListener('animationend', function() {
-
-      items[currentItem].classList.remove('first-flex');
-      items[currentItem].classList.add('third-flex');
-
-      items[ (currentItem + 1) % items.length ].classList.add('first-flex');
-      items[ (currentItem + 1) % items.length ].classList.remove('second-flex');
-
-      items[ (currentItem + 2) % items.length ].classList.add('second-flex');
-      items[ (currentItem + 2) % items.length ].classList.remove('third-flex');
-
-      this.classList.remove('slider--to-right-desktop');
-      this.classList.add('slider--null-position');
-      changeCurrentItem(n + 1);
-    });
+    document.querySelector('.slider__img--items-in-projects').classList.add('slider--to-left');
   }
+  isEnabled = false;
+  document.querySelector('.slider__img--items-in-projects').addEventListener('animationend', function() {
+    items[currentItem].classList.remove('first-flex', 'second-flex', 'slider--active-in-projects');
+    items[currentItem].classList.add('third-flex');
+
+    items[ (currentItem + 1) % items.length ].classList.add('first-flex', 'slider--active-in-projects');
+    items[ (currentItem + 1) % items.length ].classList.remove('second-flex', 'third-flex');
+
+    items[ (currentItem + 2) % items.length ].classList.add('second-flex');
+    items[ (currentItem + 2) % items.length ].classList.remove('first-flex', 'third-flex', 'slider--active-in-projects');
+
+    this.classList.remove('slider--to-left-desktop', 'slider--to-left');
+    this.classList.add('slider--null-position');
+    changeCurrentItem(n + 1);
+  });
+  isEnabled = true;
 }
 
 document.getElementById('projectsBtnPrev').addEventListener('click', function() {
@@ -140,7 +127,9 @@ const swipeDetect = (el) => {
                 previousItem(currentItem);
             }
         } else if (e.target.classList.contains('slider__btn--next')) {
+          console.log('**************** touchstart projectsBtnNext');
             if (isEnabled) {
+              console.log('isEnabled in projectsBtnNext = ', isEnabled);
                 nextItem(currentItem);
             }
         }

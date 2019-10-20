@@ -15,6 +15,26 @@
       display: none;
     }
   }
+
+  &__slider {
+    padding: 10px;
+    & .slider {
+      &__img {
+        &--list {
+          display: flex;
+          flex-wrap: nowrap;
+          width: 100%;
+        }
+
+        &--item {
+          flex-shrink: 0;
+          width: 100%;
+          height: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
 }
 
 @media(min-width: 800px) {

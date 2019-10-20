@@ -16,17 +16,19 @@
 
     &--items {
       position: relative;
+      display: flex;
+      flex-wrap: nowrap;
 
       width: 100%;
-
-      overflow: hidden;
     }
 
     &--item-in-projects {
       position: relative;
+
+      flex-shrink: 0;
       width: 100%;
 
-      display: none;
+      animation: .5s ease-in-out;
 
       & img {
         width: 100%;
@@ -101,30 +103,18 @@
   }
 
   // for JS
-  &--active-in-projects, &--next-in-projects {
+  &--active-in-projects {
     display: block;
   }
 
-  &--next-in-projects {
-    position: absolute;
-    top: 0;
-  }
 
   &--to-left {
+    animation-duration: .5s;
     animation-name: left;
   }
 
   &--to-right {
-    animation-name: right;
-    animation-direction: reverse;
-  }
-
-  &--from-left {
-    animation-name: left;
-    animation-direction: reverse;
-  }
-
-  &--from-right {
+    animation-duration: .5s;
     animation-name: right;
   }
 
@@ -138,9 +128,9 @@
 
   @keyframes right {
     from {
-      left: 100%;
-    } to {
       left: 0;
+    } to {
+      left: 100%;
     }
   }
   // END of for JS
@@ -190,17 +180,12 @@
       }
 
       &--item-in-projects {
-        flex-shrink: 0;
         width: 679px;
         height: 482px;
         margin-right: 21px;
-        display: block;
       }
 
       &--items {
-        display: flex;
-        flex-wrap: nowrap;
-
         overflow: visible;
       }
 
@@ -246,16 +231,16 @@
       }
     }
 
-    &--to-right-desktop {
-      animation-duration: 1s;
-      animation-name: right-desktop;
-    }
-
     &--null-position {
       left: 0;
     }
 
-    @keyframes right-desktop {
+    &--to-left-desktop {
+      animation-duration: .5s;
+      animation-name: left-desktop;
+    }
+
+    @keyframes left-desktop {
       from {
         left: 0;
       } to {
@@ -267,7 +252,6 @@
 
 .first-flex {
   order: -1;
-
 }
 
 .second-flex {
