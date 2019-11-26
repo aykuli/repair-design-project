@@ -1,15 +1,6 @@
-.editorconfig
-.gitattributes
-.stylelintrc
-
-node_modules/
-build/
+node_modules
+build
 
 Thumbs.db
 
 *.code-workspace
-css/style.css.map
-
-task.md
-build/
-src/scaffold/_outlines.scss
